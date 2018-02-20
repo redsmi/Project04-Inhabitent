@@ -5,7 +5,7 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Register Product Custom Post Type
+// Register Custom Product Post Type
 function product_post_type() {
 
 	$labels = array(
