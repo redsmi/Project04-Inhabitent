@@ -1,13 +1,12 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * @package RED_Starter_Theme
+ * Template Name: About
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<h1>Testing the ABOUT template</h1>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>

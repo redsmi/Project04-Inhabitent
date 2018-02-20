@@ -602,6 +602,38 @@ a {
 .bypostauthor {
   display: block; }
 
+footer {
+  background: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px; }
+  footer a {
+    text-decoration: none;
+    color: #fff; }
+  footer p {
+    color: #fff; }
+  footer .footer-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .footer-blocks h3 {
+      color: #d99054;
+      text-transform: uppercase; }
+    footer .footer-blocks .contact, footer .footer-blocks .business-hours {
+      margin: 3em 0; }
+    footer .footer-blocks .footer-block-item-large {
+      margin: 3em 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+  footer .site-info {
+    text-align: center;
+    text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

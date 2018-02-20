@@ -47,3 +47,58 @@
 .bypostauthor {
 	display: block;
 }
+
+
+
+
+
+// START OF MY CSS **********************************************************
+// Footer
+footer {
+	background: url(../../images/dark-wood@2x.png);
+	background-size: 512px 512px;
+	
+	// remove hyperlink underlines
+	a { 
+		text-decoration: none;
+		color: #fff;
+	}
+
+	p {
+		color: #fff;
+	}
+
+	.footer-blocks {
+		display: flex;
+		width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+
+
+		h3 {
+			color: #d99054;
+		    text-transform: uppercase;
+		}
+
+		.contact, .business-hours {
+			margin: 3em 0;
+			// width: 25%;
+			// flex: 1 0 50%;
+		}
+		.footer-block-item-large {
+			margin: 3em 0;
+			// width: 50%;
+			// flex: 2 0 100%;
+			// text-align: right;
+			display: flex;
+			justify-content: flex-end;
+			// align-items: flex-end;
+		}
+	}
+
+	.site-info {
+		text-align: center;
+    	text-transform: uppercase;
+	}
+}
+
