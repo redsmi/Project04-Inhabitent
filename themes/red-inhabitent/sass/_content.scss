@@ -53,6 +53,22 @@
 
 
 // START OF MY CSS **********************************************************
+// About
+.page-template-about .entry-header h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.about-body {
+	width: 1120px;
+}
+
+.page-template-about .entry-content {
+	max-width: 800px;
+	margin: 3rem auto;
+	line-height: 1.75;
+}
+
 // Footer
 footer {
 	background: url(../../images/dark-wood@2x.png);

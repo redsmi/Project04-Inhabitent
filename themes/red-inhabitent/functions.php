@@ -83,7 +83,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 
 
 	// additional sytle sheets here
@@ -110,7 +110,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-//  Testing excerpt_length'
+//  Excerpt_length'
 function inhabitent_excerpt_length( $length ) {
     return 16;
 }

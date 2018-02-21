@@ -62,11 +62,12 @@ function style_about_banner () {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($background_image) no-repeat center bottom;
+				background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), 
+							url($background_image) no-repeat center bottom;
 				background-size: cover, cover;
 				color: #fff;
 			}
 			";
-	wp_add_inline_style( 'red-starter-style', $custom_css );
+	wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'style_about_banner' );

@@ -15,17 +15,13 @@ get_header(); ?>
 					<header class="entry-header">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					</header><!-- .entry-header -->
-
+					<div class="about-body">
 					<div class="entry-content">
 						<?php the_content(); ?>
-						<div class="about-banner">
-							<!-- <h1>About</h1> -->
-							<!-- Background styled with function wp_add_inline_style -->
-						</div>
 						<h3>Our Story</h3>
-						<p><?php echo CFS() -> get ('our_story'); ?></p>
+						<?php echo CFS() -> get ('our_story'); ?>
 						<h3>Our Team</h3>
-						<p><?php echo CFS() -> get ('our_team'); ?></p>
+						<?php echo CFS() -> get ('our_team'); ?>
 
 						<?php
 							wp_link_pages( array(
@@ -34,6 +30,7 @@ get_header(); ?>
 							) );
 						?>
 					</div><!-- .entry-content -->
+					</div>
 				</article><!-- #post-## -->
 			<?php endwhile; // End of the loop. ?>
 
