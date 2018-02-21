@@ -48,3 +48,25 @@ function inhabitent_login_logo_url_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'inhabitent_login_logo_url_title' );
+
+
+// Change and style About hero banner
+function style_about_banner () {
+	if (!is_page_template('about.php')) {
+		return; 
+	}
+	$background_image = CFS() -> get ('background_hero');
+	$custom_css = "
+			.page-template-about .entry-header{
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($background_image) no-repeat center bottom;
+				background-size: cover, cover;
+				color: #fff;
+			}
+			";
+	wp_add_inline_style( 'red-starter-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'style_about_banner' );

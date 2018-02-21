@@ -110,18 +110,9 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-
-// *********************************************************** menu
-// function my_theme_setup() {
-// 	register_nav_menus( array(
-// 		 'primary' => 'Primary Menu',
-// 	 ) );
-//  }
-//  add_action( 'after_setup_theme', 'my_theme_setup' );
- 
-
 //  Testing excerpt_length'
 function inhabitent_excerpt_length( $length ) {
-    return 10;
+    return 16;
 }
 add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
+

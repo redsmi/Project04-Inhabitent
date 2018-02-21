@@ -622,14 +622,9 @@ footer {
       text-transform: uppercase; }
     footer .footer-blocks .contact, footer .footer-blocks .business-hours {
       margin: 3em 0; }
-    footer .footer-blocks .footer-block-item-large {
+    footer .footer-blocks .block3 {
       margin: 3em 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
+      text-align: center; }
   footer .site-info {
     text-align: center;
     text-transform: uppercase; }

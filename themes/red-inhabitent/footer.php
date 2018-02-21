@@ -11,7 +11,7 @@
 
 			<footer id="colophon" class="site-footer testingfooter" role="contentinfo">
 				<div class="footer-blocks container">
-					<div class="footer-block-item-small">
+					<div class="block1">
 						<div class="contact">
 							<h3>Contact Info</h3>
 							<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
@@ -23,7 +23,7 @@
 							</p>
 						</div><!-- .contact -->
 					</div>
-					<div class="footer-block-item-small">
+					<div class="block2">
 						<div class="business-hours">
 							<h3>Business Hours</h3>
 							<p><span class="day-of-week">Monday-Friday:</span> 9am to 5pm</p>
@@ -31,7 +31,7 @@
 							<p><span class="day-of-week">Sunday:</span> Closed</p>
 						</div><!-- .business-hours -->
 					</div>
-					<div class="footer-block-item-large">
+					<div class="block3">
 						<div class="text-logo">
 							<a href="http://google.ca" rel="home">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
