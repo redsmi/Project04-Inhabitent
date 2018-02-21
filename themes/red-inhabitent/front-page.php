@@ -19,50 +19,65 @@ get_header(); ?>
 			<section class="home-banner">
 			</section><!-- home-banner -->
 			<section class="shop-feed">
-				<h2>...Shop Stuff...</h2>
-				<?php
-					$args1 = array( 
-						'post_type' => 'post', 
-						'order' => 'ASC',
-						'posts_per_page' => '1'
-								);
-					$products = new WP_Query( $args1 ); // instantiate our object
+			<section class="product-info container">
+                <h2>Shop Stuff</h2>
+                <?php
+                $terms = get_terms( array(
+                    'taxonomy'   => 'product-type',
+                    'hide_empty' => 0,
+                ) );
+                if ( ! empty( $terms ) ) :
 				?>
-				<?php if ( $products->have_posts() ) : ?>
-					<?php while ( $products->have_posts() ) : $products->the_post(); ?>
-						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-					<?php endwhile; ?>
-					<?php wp_reset_postdata(); ?>
-				<?php else : ?>
-      				<h2>Nothing found!</h2>
-				<?php endif; ?>
+                    <div class="product-type-blocks">
+                        <?php foreach ( $terms as $term ) :
+                            ?>
+                            <div class="product-type-block-wrapper">
+                                <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg"
+                                     alt="<?php echo $term->name; ?>"/>
+                                <p><?php echo $term->description; ?></p>
+                                <p>
+                                    <a href="<?php echo get_term_link( $term ); ?>"
+                                      class="btn"><?php echo $term->name; ?> Stuff</a>
+                                </p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+            </section>
 			</section><!-- shop-feed -->
 			
-			<section class-"journal-feed">
+			<section class="journal-feed">
 				<h2>...Inhabitent Journal...</h2>
 				<?php
 					$args2 = array( 
 						'post_type' => 'post', 
 						'orderby' => 'date',
-						'posts_per_page' => '3'
+						'posts_per_page' => '3' //or numberofposts
 								);
 					$journal = new WP_Query( $args2 ); // instantiate our object
 				?>
 				<?php if ( $journal->have_posts() ) : ?>
-					<?php echo '<ul class="journal-list">';?>
+					<ul class="journal-list"> <!-- don't need to php echo -->
 
 					<?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
-						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+						<li>
 						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="thumbnail">
 							<?php the_post_thumbnail( 'medium' ); ?>
+							</div>
 						<?php endif; ?>
 
 						<div class="entry-meta">
 							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 						</div><!-- .entry-meta -->
+
+						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+
+						<a href="<?php get_permalink(); ?>" class="read-entry">Read Entry</a>
+						</li>
 					<?php endwhile; ?>
 
-					<?php echo '</ul>';?>
+					</ul>
 					<?php wp_reset_postdata(); ?>
 				<?php else : ?>
       				<h2>Nothing found!</h2>
@@ -74,3 +89,7 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
+
+
+
+			
