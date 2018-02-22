@@ -64,14 +64,18 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'medium' ); ?>
 							</div>
 						<?php endif; ?>
-
-						<div class="entry-meta">
+						
+						<div class="info-preview">
+							<div class="entry-meta">
 							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-						</div><!-- .entry-meta -->
+							</div><!-- .entry-meta -->
 
-						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+							<a href="<?php echo esc_url(get_permalink()); ?>">			
+							<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+							</a>		
 
-						<a href="<?php get_permalink(); ?>" class="read-entry">Read Entry</a>
+							<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read Entry</a>
+						</div><!-- info-preview -->		
 						</li>
 					<?php endwhile; ?>
 
