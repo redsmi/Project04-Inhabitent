@@ -87,7 +87,7 @@ class Business_Hours_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 
 		// Kint debugger
-		d($args, $instance );
+		// d($args, $instance );
 
 		if ( ! isset ( $args['widget_id'] ) ) {
          $args['widget_id'] = $this->id;
