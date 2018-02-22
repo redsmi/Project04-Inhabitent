@@ -71,3 +71,9 @@ function style_about_banner () {
 	wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'style_about_banner' );
+
+//  Excerpt_length'
+function inhabitent_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );

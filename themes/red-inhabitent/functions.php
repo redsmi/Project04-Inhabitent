@@ -110,9 +110,5 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-//  Excerpt_length'
-function inhabitent_excerpt_length( $length ) {
-    return 50;
-}
-add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
+
 
