@@ -56,7 +56,8 @@
 
 // Front Page
 .shop-feed,
-.journal-feed {
+.journal-feed,
+.adventure-feed {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1120px;
@@ -156,51 +157,53 @@
 footer {
 	background: url(../../images/dark-wood@2x.png);
 	background-size: 512px 512px;
-	
-	// remove hyperlink underlines
 	a { 
 		text-decoration: none;
 		color: #fff;
 	}
-
+	a:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
 	p {
 		color: #fff;
 	}
-
 	.footer-blocks {
 		display: flex;
-		width: 1120px;
 		margin-left: auto;
 		margin-right: auto;
-
-
+		width: 1120px;
 		h3 {
 			color: #d99054;
 		    text-transform: uppercase;
 		}
-
-		.contact, .business-hours {
-			margin: 3em 0;
-			// width: 25%;
-			// flex: 1 0 50%;
+		.svg-inline--fa { // weird, not <i> class
+			margin-right: 0.5rem;
+		}
+		.block1, .block2 {
+			width: 25%;
+			margin: 3rem 0;
+			.day-of-week {
+				font-weight: bold;
+			}
 		}
 		.block3 {
-			margin: 3em 0;
-			// width: 50%;
-			// flex: 2 0 100%;
-			text-align: center;
-			// display: flex;
-			// justify-content: flex-end;
-			// align-items: flex-end;
+			width: 50%;
+			text-align: right;
+			margin: 3rem 0;
 			.text-logo {
-				// width: 50%;
+				margin-top: 1rem;
+			}
+			img {
+				width: 50%;
 			}
 		}
 	}
-
 	.site-info {
 		text-align: center;
-    	text-transform: uppercase;
+		text-transform: uppercase;
+		color: #fff;
+		padding-bottom: 1rem;
 	}
 }
 

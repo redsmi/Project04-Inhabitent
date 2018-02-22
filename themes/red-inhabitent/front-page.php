@@ -18,6 +18,7 @@ get_header(); ?>
 
 			<section class="home-banner">
 			</section><!-- home-banner -->
+			
 			<section class="shop-feed">
                 <h2>Shop Stuff</h2>
                 <?php
@@ -56,7 +57,6 @@ get_header(); ?>
 				?>
 				<?php if ( $journal->have_posts() ) : ?>
 					<ul class="journal-list"> <!-- don't need to php echo -->
-
 					<?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
 						<li>
 						<?php if ( has_post_thumbnail() ) : ?>
@@ -78,13 +78,16 @@ get_header(); ?>
 						</div><!-- info-preview -->		
 						</li>
 					<?php endwhile; ?>
-
 					</ul>
 					<?php wp_reset_postdata(); ?>
 				<?php else : ?>
       				<h2>Nothing found!</h2>
 				<?php endif; ?>
 			</section><!-- journal-feed -->
+
+			<section class="adventure-feed">
+				<h2>Latest Adventures</h2>
+			</section><!-- adventure-feed -->
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

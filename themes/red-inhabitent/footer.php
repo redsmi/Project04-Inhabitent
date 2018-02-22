@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer testingfooter" role="contentinfo">
-				<div class="footer-blocks container">
+				<div class="footer-blocks">
 					<div class="block1">
 						<div class="contact">
 							<h3>Contact Info</h3>
@@ -33,15 +33,14 @@
 					</div>
 					<div class="block3">
 						<div class="text-logo">
-							<a href="http://google.ca" rel="home">
+							<a href="<?php esc_url(the_permalink()); ?>" rel="home">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
 							</a>
 						</div><!-- .text-logo -->
 					</div>
 				</div><!-- footer blocks container -->
 				<div class="site-info">
-					<p>Copyright &copy 2017 Inhabitent</p>					
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					Copyright &copy 2017 Inhabitent				
 				</div><!-- .site-info -->
 
 			</footer><!-- #colophon -->

@@ -603,13 +603,15 @@ a {
   display: block; }
 
 .shop-feed,
-.journal-feed {
+.journal-feed,
+.adventure-feed {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
   margin-bottom: 3.5rem; }
   .shop-feed h2,
-  .journal-feed h2 {
+  .journal-feed h2,
+  .adventure-feed h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -694,26 +696,41 @@ footer {
   footer a {
     text-decoration: none;
     color: #fff; }
+  footer a:hover {
+    text-decoration: underline;
+    color: #fff; }
   footer p {
     color: #fff; }
   footer .footer-blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1120px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 1120px; }
     footer .footer-blocks h3 {
       color: #d99054;
       text-transform: uppercase; }
-    footer .footer-blocks .contact, footer .footer-blocks .business-hours {
-      margin: 3em 0; }
+    footer .footer-blocks .svg-inline--fa {
+      margin-right: 0.5rem; }
+    footer .footer-blocks .block1, footer .footer-blocks .block2 {
+      width: 25%;
+      margin: 3rem 0; }
+      footer .footer-blocks .block1 .day-of-week, footer .footer-blocks .block2 .day-of-week {
+        font-weight: bold; }
     footer .footer-blocks .block3 {
-      margin: 3em 0;
-      text-align: center; }
+      width: 50%;
+      text-align: right;
+      margin: 3rem 0; }
+      footer .footer-blocks .block3 .text-logo {
+        margin-top: 1rem; }
+      footer .footer-blocks .block3 img {
+        width: 50%; }
   footer .site-info {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
