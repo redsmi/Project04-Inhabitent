@@ -609,7 +609,8 @@ body p {
   font-family: 'Merriweather', 'Arial'; }
 
 h1, h2, h3 {
-  font-family: 'Novecento'; }
+  font-family: 'Novecento';
+  letter-spacing: 2px; }
 
 #masthead {
   background-color: rgba(255, 255, 255, 0.85);
@@ -807,28 +808,32 @@ footer {
 
 .blog .site-content,
 .archive .site-content,
-.single-post .site-content {
+.single-post .site-content,
+.page-id-34 .site-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 50px; }
   .blog .site-content #primary,
   .archive .site-content #primary,
-  .single-post .site-content #primary {
+  .single-post .site-content #primary,
+  .page-id-34 .site-content #primary {
     width: 73%;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem; }
   .blog .site-content #secondary,
   .archive .site-content #secondary,
-  .single-post .site-content #secondary {
+  .single-post .site-content #secondary,
+  .page-id-34 .site-content #secondary {
     width: 27%;
     padding-left: 5%;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem; }
 
 .blog article .entry-header,
@@ -881,25 +886,6 @@ footer {
 .blog article,
 .archive article {
   margin-bottom: 4rem; }
-
-.page-id-34 .site-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .page-id-34 .site-content #primary {
-    width: 73%;
-    padding-right: 5%;
-    border-right: 1px solid #e1e1e1;
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
-  .page-id-34 .site-content #secondary {
-    width: 27%;
-    padding-left: 5%;
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
 
 .day-of-week {
   font-weight: 700; }

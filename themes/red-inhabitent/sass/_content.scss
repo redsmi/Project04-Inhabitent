@@ -58,6 +58,7 @@ body p {
 }
 h1, h2, h3 {
 	font-family: 'Novecento';
+	letter-spacing: 2px;
 }
 
 // Header Masthead
@@ -276,29 +277,31 @@ footer {
 		padding-bottom: 1rem;
 	}
 }
-// Journal, Journal Posts, and Archive
+// Journal, Journal Posts, and Archive, and Find Us
 .blog .site-content,
 .archive .site-content,
-.single-post .site-content
- {
+.single-post .site-content,
+.page-id-34 .site-content {
 	@include center-block;
 
 	width: 1120px;
 	display: flex;
+	padding-top: 50px;
 	#primary {
 		width: 73%;
 		padding-right: 5%;
 		border-right: 1px solid #e1e1e1;
-		padding-top: 5rem;
+		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
 	#secondary {
 		width: 27%;
 		padding-left: 5%;
-		padding-top: 5rem;
+		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
 }
+
 
 .blog article .entry-header,
 .archive .entry-header {
@@ -354,28 +357,6 @@ footer {
 .archive article {
 	margin-bottom: 4rem;
 }
-
-//Find Us
-.page-id-34 .site-content {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1120px;
-	display: flex;
-	#primary {
-		width: 73%;
-		padding-right: 5%;
-		border-right: 1px solid #e1e1e1;
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
-	#secondary {
-		width: 27%;
-		padding-left: 5%;
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
-}
-
 
 // Sidebar
 .day-of-week {
