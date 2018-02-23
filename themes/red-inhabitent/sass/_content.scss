@@ -53,14 +53,6 @@
 
 
 // START OF MY CSS **********************************************************
-body p {
-	font-family: 'Merriweather', 'Arial';
-}
-h1, h2, h3 {
-	font-family: 'Novecento';
-	letter-spacing: 2px;
-}
-
 // Header Masthead
 #masthead {
 	background-color: hsla(0,0%,100%,.85);
@@ -202,7 +194,7 @@ h1, h2, h3 {
 	}
 }
 
-// About
+// About *******************************
 .page-template-about .entry-header h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -276,10 +268,10 @@ footer {
 		padding-bottom: 1rem;
 	}
 }
-// Journal, Journal Posts, and Archive, Find Us, Search
+// Journal, Journal Posts, Archive, Find Us, Search
 .blog .site-content,
-.archive .site-content,
 .single-post .site-content,
+.archive .site-content,
 .page-id-34 .site-content,
 .search .site-content {
 	@include center-block;
@@ -299,19 +291,23 @@ footer {
 		padding-bottom: 3rem;
 	}
 }
+// Journal, Journal Posts
 .blog .site-content,
 .single-post .site-content {
 	padding-top: 50px;
 }
-
+// Archive, Find Us, Search
 .archive .site-content,
 .page-id-34 .site-content,
 .search .site-content {
 	padding-top: 30px;	
 }
 
+// Journal posts: Title and entry-meta on image
 .blog article .entry-header,
-.archive .entry-header {
+.archive .entry-header, 
+.single-post .entry-header
+ {
 	position: relative;	
 	line-height: 0;
 	a {
@@ -324,7 +320,7 @@ footer {
 		width: 100%;
 		height: auto;
 	}
-	h2 {
+	h1, h2 {
 		background-color: #248a83;
 		color: #fff;
 		position: absolute;
@@ -347,8 +343,9 @@ footer {
 		line-height: 1;
 	}
 }
-.blog .site-main,
-.archive .site-main {
+// Journal posts: Entry meta and Read More
+.blog .entry-content,
+.archive .entry-content {
 	a.read-entry {
 	color: #000;
 	font-size: 1rem;

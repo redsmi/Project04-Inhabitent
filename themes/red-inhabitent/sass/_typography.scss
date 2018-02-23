@@ -14,10 +14,15 @@ textarea {
 }
 
 /* Headings */
+body p {
+	font-family: 'Merriweather', 'Arial';
+}
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	text-transform: uppercase;
+	font-family: 'Novecento';
+	letter-spacing: 2px;
 }
 
 h1 {
