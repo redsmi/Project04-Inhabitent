@@ -287,6 +287,13 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   text-transform: uppercase; }
 
+h1 {
+  margin: 0.5rem 0; }
+
+a {
+  color: #248a83;
+  text-decoration: none; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -645,16 +652,19 @@ h1, h2, h3 {
       text-transform: uppercase;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       #masthead .masthead-flex .main-navigation ul {
         list-style: none;
         margin: 0; }
         #masthead .masthead-flex .main-navigation ul li {
           display: inline;
           padding-left: 1rem; }
-      #masthead .masthead-flex .main-navigation a {
-        color: #248a83;
-        text-decoration: none; }
+      #masthead .masthead-flex .main-navigation fieldset {
+        border: none;
+        padding: 0 0 0 1rem; }
 
 .home-banner {
   text-align: center;
@@ -730,7 +740,6 @@ h1, h2, h3 {
     width: 32%;
     border: 1px solid #e1e1e1; }
     .journal-feed ul li a {
-      text-decoration: none;
       text-transform: uppercase; }
   .journal-feed ul .thumbnail img {
     width: 100%;
@@ -770,7 +779,6 @@ footer {
   background: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px; }
   footer a {
-    text-decoration: none;
     color: #fff; }
   footer a:hover {
     text-decoration: underline;
@@ -812,19 +820,20 @@ footer {
 .blog .site-content,
 .archive .site-content,
 .single-post .site-content,
-.page-id-34 .site-content {
+.page-id-34 .site-content,
+.search .site-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  padding-top: 50px; }
+  display: flex; }
   .blog .site-content #primary,
   .archive .site-content #primary,
   .single-post .site-content #primary,
-  .page-id-34 .site-content #primary {
+  .page-id-34 .site-content #primary,
+  .search .site-content #primary {
     width: 73%;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1;
@@ -833,11 +842,21 @@ footer {
   .blog .site-content #secondary,
   .archive .site-content #secondary,
   .single-post .site-content #secondary,
-  .page-id-34 .site-content #secondary {
+  .page-id-34 .site-content #secondary,
+  .search .site-content #secondary {
     width: 27%;
     padding-left: 5%;
     padding-top: 3rem;
     padding-bottom: 3rem; }
+
+.blog .site-content,
+.single-post .site-content {
+  padding-top: 50px; }
+
+.archive .site-content,
+.page-id-34 .site-content,
+.search .site-content {
+  padding-top: 30px; }
 
 .blog article .entry-header,
 .archive .entry-header {
@@ -845,7 +864,6 @@ footer {
   line-height: 0; }
   .blog article .entry-header a,
   .archive .entry-header a {
-    text-decoration: none;
     color: #fff; }
   .blog article .entry-header a:visited,
   .archive .entry-header a:visited {
@@ -890,14 +908,18 @@ footer {
 .archive article {
   margin-bottom: 4rem; }
 
-.page-id-34 .site-content {
-  padding-top: 0px; }
-
-.page-id-34 .entry-header h1 {
+.page-id-34 .entry-header h1,
+.search .page-header h1,
+.archive .page-header h1 {
   font-size: 2.5rem; }
 
 .page-id-34 .entry-content h2 {
   font-size: 1.8rem; }
+
+.search .page-header,
+.archive .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem; }
 
 .day-of-week {
   font-weight: 700; }
@@ -906,9 +928,6 @@ footer {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
-  #archives-2 ul a {
-    color: #248a83;
-    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media

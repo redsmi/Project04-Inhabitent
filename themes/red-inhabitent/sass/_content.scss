@@ -91,6 +91,7 @@ h1, h2, h3 {
 		.main-navigation {
 			text-transform: uppercase;
 			display: flex;
+			align-items: center;
 			ul {
 				list-style: none;
 				margin: 0;
@@ -99,9 +100,9 @@ h1, h2, h3 {
 					padding-left: 1rem;
 				}
 			}
-			a {
-				color: #248a83;
-				text-decoration: none;
+			fieldset {
+				border: none;
+				padding: 0 0 0 1rem;
 			}
 		}
 	}
@@ -174,7 +175,6 @@ h1, h2, h3 {
 		width: 32%;
 		border: 1px solid #e1e1e1;
 		a {
-			text-decoration: none;
 			text-transform: uppercase;
 		}
 	}
@@ -228,7 +228,6 @@ footer {
 	background: url(../../images/dark-wood@2x.png);
 	background-size: 512px 512px;
 	a { 
-		text-decoration: none;
 		color: #fff;
 	}
 	a:hover {
@@ -277,16 +276,15 @@ footer {
 		padding-bottom: 1rem;
 	}
 }
-// Journal, Journal Posts, and Archive, and Find Us
+// Journal, Journal Posts, and Archive, Find Us, Search
 .blog .site-content,
 .archive .site-content,
 .single-post .site-content,
-.page-id-34 .site-content {
+.page-id-34 .site-content,
+.search .site-content {
 	@include center-block;
-
 	width: 1120px;
 	display: flex;
-	padding-top: 50px;
 	#primary {
 		width: 73%;
 		padding-right: 5%;
@@ -301,14 +299,22 @@ footer {
 		padding-bottom: 3rem;
 	}
 }
+.blog .site-content,
+.single-post .site-content {
+	padding-top: 50px;
+}
 
+.archive .site-content,
+.page-id-34 .site-content,
+.search .site-content {
+	padding-top: 30px;	
+}
 
 .blog article .entry-header,
 .archive .entry-header {
 	position: relative;	
 	line-height: 0;
 	a {
-		text-decoration: none;
 		color: #fff;
 	}
 	a:visited {
@@ -358,15 +364,21 @@ footer {
 	margin-bottom: 4rem;
 }
 
-// Find Us 
-.page-id-34 .site-content {
-	padding-top: 0px;
-}
-.page-id-34 .entry-header h1 {
+// Find Us, Search
+.page-id-34 .entry-header h1,
+.search .page-header h1,
+.archive .page-header h1 {
 	font-size: 2.5rem;
 }
 .page-id-34 .entry-content h2 {
 	font-size: 1.8rem;
+}
+
+// Search and Archive
+.search .page-header,
+.archive .page-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 3rem;
 }
 
 // Sidebar
@@ -378,10 +390,5 @@ footer {
 		list-style: none;
 		margin-left: 0;
 		padding-left: 0;
-		a {
-			color: #248a83;
-			text-decoration: none;
-		}
 	}
-
 }
