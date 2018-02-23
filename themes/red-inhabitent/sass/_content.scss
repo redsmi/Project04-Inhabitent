@@ -53,6 +53,9 @@
 
 
 // START OF MY CSS **********************************************************
+body p {
+	font-family: 'Meatherweather', 'Arial';
+}
 // Header Masthead
 #masthead {
 	background-color: hsla(0,0%,100%,.85);
@@ -117,7 +120,6 @@
 	margin-bottom: 3.5rem;
 	h2 {
 		text-align: center;
-		text-transform: uppercase;
 		font-size: 2.5rem;
 		font-weight: 400;
 		margin-bottom: 3.5rem;
@@ -262,8 +264,10 @@ footer {
 	}
 }
 
-// Journal
-.blog .site-content {
+// Journal and Archive
+.blog .site-content,
+.archive .site-content,
+ {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1120px;
@@ -277,12 +281,14 @@ footer {
 	}
 	#secondary {
 		width: 27%;
+		padding-left: 5%;
 		padding-top: 5rem;
 		padding-bottom: 3rem;
 	}
 }
 
-.blog article .entry-header {
+.blog article .entry-header,
+.archive .entry-header {
 	position: relative;	
 	line-height: 0;
 	a {
@@ -306,7 +312,6 @@ footer {
 		margin-top: 3rem;
 		max-width: 75%;
 		font-size: 2rem;
-		text-transform: uppercase;
 		line-height: 1.25;
 	}
 	.entry-meta {
@@ -320,7 +325,8 @@ footer {
 		line-height: 1;
 	}
 }
-.blog .site-main {
+.blog .site-main,
+.archive .site-main {
 	a.read-entry {
 	color: #000;
 	font-size: 1rem;
@@ -330,7 +336,8 @@ footer {
 	}
 }
 
-.blog article {
+.blog article,
+.archive article {
 	margin-bottom: 4rem;
 }
 
@@ -349,7 +356,26 @@ footer {
 	}
 	#secondary {
 		width: 27%;
+		padding-left: 5%;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
+}
+
+
+// Sidebar
+.day-of-week {
+	font-weight: 700;
+}
+#archives-2 {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		a {
+			color: #248a83;
+			text-decoration: none;
+		}
+	}
+
 }
