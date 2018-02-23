@@ -642,7 +642,10 @@ h1, h2, h3 {
       text-indent: 100%;
       overflow: hidden; }
     #masthead .masthead-flex .main-navigation {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
       #masthead .masthead-flex .main-navigation ul {
         list-style: none;
         margin: 0; }
