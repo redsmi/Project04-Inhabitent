@@ -18,9 +18,9 @@ get_header(); ?>
 					<div class="about-body">
 					<div class="entry-content">
 						<?php the_content(); ?>
-						<h3>Our Story</h3>
+						<h2>Our Story</h2>
 						<?php echo CFS() -> get ('our_story'); ?>
-						<h3>Our Team</h3>
+						<h2>Our Team</h2>
 						<?php echo CFS() -> get ('our_team'); ?>
 
 						<?php

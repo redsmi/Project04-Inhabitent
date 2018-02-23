@@ -147,7 +147,6 @@ h1, h2, h3 {
 		width: 70px;
 	}
 	p {
-		line-height: 1.75;
 		margin-bottom: 1.5rem;
 	}
 	a {
@@ -204,7 +203,7 @@ h1, h2, h3 {
 
 // About
 .page-template-about .entry-header h1 {
-	font-size: 3em;
+	font-size: 3rem;
 	text-transform: uppercase;
 }
 
@@ -217,10 +216,9 @@ h1, h2, h3 {
 .page-template-about .entry-content {
 	max-width: 800px;
 	margin: 3rem auto;
-	line-height: 1.75;
-
-	h3 {
+	h2 {
 		text-align: center;
+		font-size: 2rem;
 	}
 }
 
@@ -238,6 +236,7 @@ footer {
 	}
 	p {
 		color: #fff;
+		margin-bottom: 1rem;
 	}
 	.footer-blocks {
 		display: flex;
@@ -253,7 +252,7 @@ footer {
 		}
 		.block1, .block2 {
 			width: 25%;
-			margin: 3rem 0;
+			margin: 3.5rem 0;
 			.day-of-week {
 				font-weight: bold;
 			}
@@ -261,7 +260,7 @@ footer {
 		.block3 {
 			width: 50%;
 			text-align: right;
-			margin: 3rem 0;
+			margin: 3.5rem 0;
 			.text-logo {
 				margin-top: 1rem;
 			}
