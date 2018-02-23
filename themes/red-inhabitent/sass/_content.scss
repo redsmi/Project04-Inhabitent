@@ -269,14 +269,13 @@ footer {
 		padding-bottom: 1rem;
 	}
 }
-
 // Journal, Journal Posts, and Archive
 .blog .site-content,
 .archive .site-content,
 .single-post .site-content
  {
-	margin-left: auto;
-	margin-right: auto;
+	@include center-block;
+
 	width: 1120px;
 	display: flex;
 	#primary {

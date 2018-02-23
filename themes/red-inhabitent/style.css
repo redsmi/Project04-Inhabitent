@@ -803,6 +803,7 @@ footer {
 .blog .site-content,
 .archive .site-content,
 .single-post .site-content {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
