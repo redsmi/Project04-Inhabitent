@@ -798,14 +798,14 @@ footer {
   display: flex; }
   .blog .site-content #primary,
   .archive .site-content #primary {
-    width: 73%;
+    width: 75%;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1;
     padding-top: 5rem;
     padding-bottom: 3rem; }
   .blog .site-content #secondary,
   .archive .site-content #secondary {
-    width: 27%;
+    width: 25%;
     padding-left: 5%;
     padding-top: 5rem;
     padding-bottom: 3rem; }
