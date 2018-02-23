@@ -56,12 +56,17 @@
 body p {
 	font-family: 'Merriweather', 'Arial';
 }
+h1, h2, h3 {
+	font-family: 'Novecento';
+}
+
 // Header Masthead
 #masthead {
 	background-color: hsla(0,0%,100%,.85);
 	border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
-    position: fixed;
+	position: fixed;
+	padding: 0.5rem;
     // transition: top .5s linear;
     width: 100%;
 	z-index: 999;
@@ -265,9 +270,10 @@ footer {
 	}
 }
 
-// Journal and Archive
+// Journal, Journal Posts, and Archive
 .blog .site-content,
 .archive .site-content,
+.single-post .site-content
  {
 	margin-left: auto;
 	margin-right: auto;
