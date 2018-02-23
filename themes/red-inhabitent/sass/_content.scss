@@ -138,18 +138,25 @@ h1, h2, h3 {
 	.product-type {
 		border: 1px solid #e1e1e1;
 		border-top-width: 5px;
-		max-width: 22.5%;
-		padding: 1rem;
+		max-width: 23.5%;
+		padding: 0.75rem;
 	}
 	img {
 		height: 70px;
 		width: 70px;
 	}
+	p {
+		line-height: 1.75;
+		margin-bottom: 1.5rem;
+	}
+	a {
+		font-family: 'Novecento';
+	}
 	.product-button {
 		background: #248a83;
 		color: #fff;
 		cursor: pointer;
-		font-size: 0.75rem;
+		font-size: 0.9rem;
 		text-decoration: none;
 		text-transform: uppercase;
 		padding: .75rem 1.5rem;
