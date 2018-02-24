@@ -664,6 +664,48 @@ a:hover, a:active {
         border: none;
         padding: 0 0 0 1rem; }
 
+#colophon {
+  background: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px; }
+  #colophon a {
+    color: #fff; }
+  #colophon a:hover {
+    text-decoration: underline;
+    color: #fff; }
+  #colophon p {
+    color: #fff;
+    margin-bottom: 1rem; }
+  #colophon .footer-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+    #colophon .footer-blocks h3 {
+      color: #d99054;
+      text-transform: uppercase; }
+    #colophon .footer-blocks .svg-inline--fa {
+      margin-right: 0.5rem; }
+    #colophon .footer-blocks .block1, #colophon .footer-blocks .block2 {
+      width: 25%;
+      margin: 3.5rem 0; }
+      #colophon .footer-blocks .block1 .day-of-week, #colophon .footer-blocks .block2 .day-of-week {
+        font-weight: bold; }
+    #colophon .footer-blocks .block3 {
+      width: 50%;
+      text-align: right;
+      margin: 3.5rem 0; }
+      #colophon .footer-blocks .block3 .text-logo {
+        margin-top: 1rem; }
+      #colophon .footer-blocks .block3 img {
+        width: 50%; }
+  #colophon .site-info {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 1rem; }
+
 .home-banner {
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg);
@@ -773,48 +815,6 @@ a:hover, a:active {
     text-align: center;
     font-size: 2rem; }
 
-footer {
-  background: url(../../images/dark-wood@2x.png);
-  background-size: 512px 512px; }
-  footer a {
-    color: #fff; }
-  footer a:hover {
-    text-decoration: underline;
-    color: #fff; }
-  footer p {
-    color: #fff;
-    margin-bottom: 1rem; }
-  footer .footer-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px; }
-    footer .footer-blocks h3 {
-      color: #d99054;
-      text-transform: uppercase; }
-    footer .footer-blocks .svg-inline--fa {
-      margin-right: 0.5rem; }
-    footer .footer-blocks .block1, footer .footer-blocks .block2 {
-      width: 25%;
-      margin: 3.5rem 0; }
-      footer .footer-blocks .block1 .day-of-week, footer .footer-blocks .block2 .day-of-week {
-        font-weight: bold; }
-    footer .footer-blocks .block3 {
-      width: 50%;
-      text-align: right;
-      margin: 3.5rem 0; }
-      footer .footer-blocks .block3 .text-logo {
-        margin-top: 1rem; }
-      footer .footer-blocks .block3 img {
-        width: 50%; }
-  footer .site-info {
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    padding-bottom: 1rem; }
-
 .blog .site-content,
 .single-post .site-content,
 .archive .site-content,
@@ -913,6 +913,22 @@ footer {
 .blog article,
 .archive article {
   margin-bottom: 4rem; }
+
+.single-post article .entry-footer {
+  text-transform: uppercase;
+  font-family: 'Novecento'; }
+  .single-post article .entry-footer .cat-links {
+    margin-right: 1.5rem; }
+
+.social-media button {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: .75rem 1.5rem; }
+  .social-media button .svg-inline--fa {
+    margin-right: 0.5rem; }
 
 .page-id-34 .entry-header h1,
 .search .page-header h1,
