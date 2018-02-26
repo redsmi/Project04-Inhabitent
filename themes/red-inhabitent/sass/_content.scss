@@ -392,10 +392,31 @@
 // Shop Archive grid
 .post-type-archive-product .page-header,
 .tax-product-type .page-header {
+	text-align: center;
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 3rem;
-	text-align: center;
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
+		li {
+		  list-style-type: none;
+		  display: inline-block;
+		  font-size: 1.2rem;
+		  text-transform: uppercase;
+		  margin: 0 1.5rem;
+			a {
+			font-family: 'Novecento';
+			color: #248a83;
+			text-decoration: none;
+				&:hover {
+				color: #000;
+				}
+			}
+		}
+	}
 }
+
 .post-type-archive-product .site-content {
 	@include center-block;
 	width: 1120px;
