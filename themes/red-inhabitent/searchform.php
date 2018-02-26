@@ -4,7 +4,7 @@
 			<i class="fa fa-search"></i>
 		</a>
 		<label>
-			<input type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+			<input type="search" class="search-field" placeholder="TYPE AND HIT ENTER..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 		</label>
 		<!-- default button unecessary -->
 		<!-- <button class="search-submit">
