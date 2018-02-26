@@ -439,6 +439,16 @@
 	.thumbnail {
 		height: 250px;
 		overflow: hidden;
+		position: relative;
+		.wp-post-image {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-52%);
+			max-height: 250px;
+			max-width: none;
+			width: auto;	
+		}
 	}
 }
 

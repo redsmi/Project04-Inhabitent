@@ -1008,7 +1008,17 @@ a:hover, a:active {
   margin-bottom: 1.5rem; }
   .shop-grid-items article .thumbnail {
     height: 250px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .shop-grid-items article .thumbnail .wp-post-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -52%);
+              transform: translate(-50%, -52%);
+      max-height: 250px;
+      max-width: none;
+      width: auto; }
 
 .page-id-34 .entry-header h1,
 .search .page-header h1,

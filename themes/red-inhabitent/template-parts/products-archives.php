@@ -8,11 +8,12 @@
       </div>
     <?php endif; ?>
 
-    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">',
-    esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+    <h2 class="entry-title">
+      <?php the_title( sprintf( '<a href="%s" rel="bookmark">',
+      esc_url( get_permalink() ) ), '</a>' ); ?>
 
-    <p><?php echo CFS()->get( 'price' ); ?></p>
-
+      <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+    </h2>
   <!-- </header> -->
   <!-- .entry-header -->
 
