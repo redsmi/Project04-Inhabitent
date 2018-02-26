@@ -818,6 +818,7 @@ a:hover, a:active {
 .blog .site-content,
 .single-post .site-content,
 .archive.date .site-content,
+.archive.category .site-content,
 .archive.tag .site-content,
 .page-id-34 .site-content,
 .search .site-content {
@@ -831,6 +832,7 @@ a:hover, a:active {
   .blog .site-content #primary,
   .single-post .site-content #primary,
   .archive.date .site-content #primary,
+  .archive.category .site-content #primary,
   .archive.tag .site-content #primary,
   .page-id-34 .site-content #primary,
   .search .site-content #primary {
@@ -842,6 +844,7 @@ a:hover, a:active {
   .blog .site-content #secondary,
   .single-post .site-content #secondary,
   .archive.date .site-content #secondary,
+  .archive.category .site-content #secondary,
   .archive.tag .site-content #secondary,
   .page-id-34 .site-content #secondary,
   .search .site-content #secondary {
@@ -861,22 +864,26 @@ a:hover, a:active {
 
 .blog article .entry-header,
 .archive.date .entry-header,
+.archive.category .entry-header,
 .archive.tag .entry-header,
 .single-post .entry-header {
   position: relative;
   line-height: 0; }
   .blog article .entry-header a,
   .archive.date .entry-header a,
+  .archive.category .entry-header a,
   .archive.tag .entry-header a,
   .single-post .entry-header a {
     color: #fff; }
   .blog article .entry-header a:visited,
   .archive.date .entry-header a:visited,
+  .archive.category .entry-header a:visited,
   .archive.tag .entry-header a:visited,
   .single-post .entry-header a:visited {
     color: #fff; }
   .blog article .entry-header img,
   .archive.date .entry-header img,
+  .archive.category .entry-header img,
   .archive.tag .entry-header img,
   .single-post .entry-header img {
     width: 100%;
@@ -884,6 +891,8 @@ a:hover, a:active {
   .blog article .entry-header h1, .blog article .entry-header h2,
   .archive.date .entry-header h1,
   .archive.date .entry-header h2,
+  .archive.category .entry-header h1,
+  .archive.category .entry-header h2,
   .archive.tag .entry-header h1,
   .archive.tag .entry-header h2,
   .single-post .entry-header h1,
@@ -900,6 +909,7 @@ a:hover, a:active {
     line-height: 1.25; }
   .blog article .entry-header .entry-meta,
   .archive.date .entry-header .entry-meta,
+  .archive.category .entry-header .entry-meta,
   .archive.tag .entry-header .entry-meta,
   .single-post .entry-header .entry-meta {
     background-color: #248a83;
@@ -923,6 +933,7 @@ a:hover, a:active {
 
 .blog article,
 .archive.date article,
+.archive.category article,
 .archive.tag article {
   margin-bottom: 4rem; }
 

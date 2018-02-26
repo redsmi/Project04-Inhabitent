@@ -272,6 +272,7 @@
 .blog .site-content,
 .single-post .site-content,
 .archive.date .site-content,
+.archive.category .site-content,
 .archive.tag .site-content,
 .page-id-34 .site-content,
 .search .site-content {
@@ -307,6 +308,7 @@
 // Journal posts: Title and entry-meta on image
 .blog article .entry-header,
 .archive.date .entry-header, 
+.archive.category .entry-header,
 .archive.tag .entry-header,
 .single-post .entry-header
  {
@@ -361,6 +363,7 @@
 // Journal posts: space between articles
 .blog article,
 .archive.date article,
+.archive.category article,
 .archive.tag article {
 	margin-bottom: 4rem;
 }
