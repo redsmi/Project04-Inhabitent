@@ -1,7 +1,7 @@
 console.log('Hello script this is working yeah');
 
 $(document).ready(function () {
-    $('.main-navigation .search-submit').on('click', function (event) {
+    $('.main-navigation .search-toggle').on('click', function (event) {
         event.preventDefault();
         console.log('testing search on click');
         $('.main-navigation .search-field').focus();
