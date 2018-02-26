@@ -35,29 +35,32 @@ get_header(); ?>
 		</ul>
 		</header><!-- .page-header -->
 
-        <?php if ( have_posts() ) : ?>
+		<div class="shop-grid-items">
+			<?php
+			$args = array( 
+			'post_type' => 'product', 
+			'posts_per_page' => '16',
+			'orderby' => 'title',
+			'order' => 'ASC'
+						);
+			$products = new WP_Query( $args ); // instantiate our object
+			?>
+			<?php if ( $products->have_posts() ) : ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
-			<!-- moved header -->
+					<?php get_template_part( 'template-parts/products-archives', 'none' ); ?>
 
-            <?php /* Start the Loop */ ?>
-            <div class="products-wrapper">
-            <?php while ( have_posts() ) : the_post(); ?>
+				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 
-                <?php get_template_part( 'template-parts/products-archives', 'none' ); ?>
+			<?php else : ?>
 
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-            <?php endwhile; ?>
-            </div>
-
-            <?php the_posts_navigation(); ?>
-
-        <?php else : ?>
-
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-        <?php endif; ?>
-
-        </main><!-- #main -->
-    </div><!-- #primary -->
+			<?php endif; ?>
+		</div><!-- shop-grid-items -->
+    </main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
