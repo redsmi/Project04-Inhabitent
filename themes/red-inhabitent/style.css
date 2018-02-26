@@ -902,7 +902,8 @@ a:hover, a:active {
     line-height: 1; }
 
 .blog .entry-content a.read-entry,
-.archive .entry-content a.read-entry {
+.archive .entry-content a.read-entry,
+.search .entry-summary a.read-entry {
   color: #000;
   font-size: 1rem;
   border: 1px solid #000;
@@ -937,6 +938,9 @@ a:hover, a:active {
 
 .page-id-34 .entry-content h2 {
   font-size: 1.8rem; }
+
+.search h2 {
+  font-size: 2rem; }
 
 .search .page-header,
 .archive .page-header {

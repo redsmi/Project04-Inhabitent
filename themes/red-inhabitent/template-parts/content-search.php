@@ -20,5 +20,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More →</a>
+		<!-- like content.php -->
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

@@ -345,7 +345,8 @@
 }
 // Journal posts: Entry meta and Read More
 .blog .entry-content,
-.archive .entry-content {
+.archive .entry-content,
+.search .entry-summary {
 	a.read-entry {
 	color: #000;
 	font-size: 1rem;
@@ -390,6 +391,9 @@
 }
 .page-id-34 .entry-content h2 {
 	font-size: 1.8rem;
+}
+.search h2 {
+	font-size: 2rem;
 }
 
 // Search and Archive
