@@ -390,6 +390,15 @@
 }
 
 // Shop Archive grid
+.post-type-archive-product .site-content {
+	@include center-block;
+	width: 1120px;
+	// background: skyblue;
+}
+.post-type-archive-product #primary {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 .post-type-archive-product .page-header,
 .tax-product-type .page-header {
 	text-align: center;
@@ -417,14 +426,20 @@
 	}
 }
 
-.post-type-archive-product .site-content {
-	@include center-block;
-	width: 1120px;
-	// background: skyblue;
+.shop-grid-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.post-type-archive-product #primary {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+.shop-grid-items article {
+	border: 1px solid #e1e1e1;
+	flex: 0 1 23%;
+	max-width: 23%;
+	margin-bottom: 1.5rem;
+	.thumbnail {
+		height: 250px;
+		overflow: hidden;
+	}
 }
 
 // Find Us, Search
