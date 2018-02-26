@@ -7,12 +7,11 @@
       </a>
       </div>
     <?php endif; ?>
-
+    
     <h2 class="entry-title">
-      <?php the_title( sprintf( '<a href="%s" rel="bookmark">',
-      esc_url( get_permalink() ) ), '</a>' ); ?>
+    <?php the_title(); ?>
 
-      <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+    <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
     </h2>
   <!-- </header> -->
   <!-- .entry-header -->
