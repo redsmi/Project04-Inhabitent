@@ -818,6 +818,7 @@ a:hover, a:active {
 .blog .site-content,
 .single-post .site-content,
 .archive.date .site-content,
+.archive.tag .site-content,
 .page-id-34 .site-content,
 .search .site-content {
   display: block;
@@ -830,6 +831,7 @@ a:hover, a:active {
   .blog .site-content #primary,
   .single-post .site-content #primary,
   .archive.date .site-content #primary,
+  .archive.tag .site-content #primary,
   .page-id-34 .site-content #primary,
   .search .site-content #primary {
     width: 73%;
@@ -840,6 +842,7 @@ a:hover, a:active {
   .blog .site-content #secondary,
   .single-post .site-content #secondary,
   .archive.date .site-content #secondary,
+  .archive.tag .site-content #secondary,
   .page-id-34 .site-content #secondary,
   .search .site-content #secondary {
     width: 27%;
@@ -858,25 +861,31 @@ a:hover, a:active {
 
 .blog article .entry-header,
 .archive.date .entry-header,
+.archive.tag .entry-header,
 .single-post .entry-header {
   position: relative;
   line-height: 0; }
   .blog article .entry-header a,
   .archive.date .entry-header a,
+  .archive.tag .entry-header a,
   .single-post .entry-header a {
     color: #fff; }
   .blog article .entry-header a:visited,
   .archive.date .entry-header a:visited,
+  .archive.tag .entry-header a:visited,
   .single-post .entry-header a:visited {
     color: #fff; }
   .blog article .entry-header img,
   .archive.date .entry-header img,
+  .archive.tag .entry-header img,
   .single-post .entry-header img {
     width: 100%;
     height: auto; }
   .blog article .entry-header h1, .blog article .entry-header h2,
   .archive.date .entry-header h1,
   .archive.date .entry-header h2,
+  .archive.tag .entry-header h1,
+  .archive.tag .entry-header h2,
   .single-post .entry-header h1,
   .single-post .entry-header h2 {
     background-color: #248a83;
@@ -891,6 +900,7 @@ a:hover, a:active {
     line-height: 1.25; }
   .blog article .entry-header .entry-meta,
   .archive.date .entry-header .entry-meta,
+  .archive.tag .entry-header .entry-meta,
   .single-post .entry-header .entry-meta {
     background-color: #248a83;
     color: #fff;
@@ -912,7 +922,8 @@ a:hover, a:active {
   text-transform: uppercase; }
 
 .blog article,
-.archive.date article {
+.archive.date article,
+.archive.tag article {
   margin-bottom: 4rem; }
 
 .single-post article .entry-footer {
@@ -930,6 +941,17 @@ a:hover, a:active {
   padding: .75rem 1.5rem; }
   .social-media button .svg-inline--fa {
     margin-right: 0.5rem; }
+
+.post-type-archive-product .site-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  background: skyblue; }
+
+.post-type-archive-product #primary {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .page-id-34 .entry-header h1,
 .search .page-header h1,

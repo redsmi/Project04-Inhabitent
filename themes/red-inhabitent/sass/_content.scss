@@ -272,6 +272,7 @@
 .blog .site-content,
 .single-post .site-content,
 .archive.date .site-content,
+.archive.tag .site-content,
 .page-id-34 .site-content,
 .search .site-content {
 	@include center-block;
@@ -306,6 +307,7 @@
 // Journal posts: Title and entry-meta on image
 .blog article .entry-header,
 .archive.date .entry-header, 
+.archive.tag .entry-header,
 .single-post .entry-header
  {
 	position: relative;	
@@ -358,7 +360,8 @@
 }
 // Journal posts: space between articles
 .blog article,
-.archive.date article {
+.archive.date article,
+.archive.tag article {
 	margin-bottom: 4rem;
 }
 
@@ -381,6 +384,17 @@
 	.svg-inline--fa { // weird, not <i> class
 		margin-right: 0.5rem;
 	}
+}
+
+// Shop Archive grid
+.post-type-archive-product .site-content {
+	@include center-block;
+	width: 1120px;
+	background: skyblue;
+}
+.post-type-archive-product #primary {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 // Find Us, Search
