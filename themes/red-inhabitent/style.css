@@ -953,12 +953,17 @@ a:hover, a:active {
   .social-media button .svg-inline--fa {
     margin-right: 0.5rem; }
 
+.post-type-archive-product .page-header,
+.tax-product-type .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center; }
+
 .post-type-archive-product .site-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
-  background: skyblue; }
+  width: 1120px; }
 
 .post-type-archive-product #primary {
   padding-top: 3rem;
@@ -976,7 +981,9 @@ a:hover, a:active {
   font-size: 2rem; }
 
 .search .page-header,
-.archive .page-header {
+.archive.date .page-header,
+.archive.category .page-header,
+.archive.tag .page-header {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem; }
 

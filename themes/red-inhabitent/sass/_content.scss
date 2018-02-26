@@ -390,10 +390,16 @@
 }
 
 // Shop Archive grid
+.post-type-archive-product .page-header,
+.tax-product-type .page-header {
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 3rem;
+	text-align: center;
+}
 .post-type-archive-product .site-content {
 	@include center-block;
 	width: 1120px;
-	background: skyblue;
+	// background: skyblue;
 }
 .post-type-archive-product #primary {
 	padding-top: 3rem;
@@ -415,7 +421,9 @@
 
 // Search and Archive
 .search .page-header,
-.archive .page-header {
+.archive.date .page-header,
+.archive.category .page-header,
+.archive.tag .page-header  {
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 3rem;
 }
