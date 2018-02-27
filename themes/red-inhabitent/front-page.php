@@ -84,24 +84,24 @@ get_header(); ?>
 				<h2>Latest Adventures</h2>
 				<div class="adventure-list">
 					<div class="adv-canoe">
-						<h2>Getting Back to Nature in a Canoe</h2>
+						<h2 class="h2-large">Getting Back to Nature in a Canoe</h2>
 						<p><a href="#">Read More</a></p>
 					</div>
 					<div class="adv-beach">
-						<h2>A Night with Friends at the Beach</h2>
+						<h2 class="h2-large">A Night with Friends at the Beach</h2>
 						<p><a href="#">Read More</a></p>
 					</div>
 					<div class="adv-mountain">
-						<h2>Taking in the View at Big Mountain</h2>
+						<h2 class="h2-small">Taking in the View at Big Mountain</h2>
 						<p><a href="#">Read More</a></p>
 					</div>
 					<div class="adv-night-sky">
-						<h2>Star-gazing at the Night Sky</h2>
+						<h2 class="h2-small">Star-gazing at the Night Sky</h2>
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
 					<p class="more-adventures">
-						<a href="more-adventures.php" class="adventure-button">More Adventures</a>
+						<a href="#" class="adventure-button">More Adventures</a>
 					</p>
 			</section><!-- adventure-feed -->
 			

@@ -287,10 +287,36 @@
 		text-transform: none;
 		font-family: 'Merriweather';
 		color: #fff;
-		font-size: 2rem;
 		line-height: 1.25;
+		padding-left: 2rem;
+		text-align: left;
+	}
+	.h2-large {
+		font-size: 2rem;
+	}
+	.h2-small {
+		font-size: 1.5rem;
+	}
+	p {
+		padding-left: 2rem;
+	}
+	a {
+		color: #fff;
+		font-family: 'Novecento';
+		font-size: 1rem;
+		border: 1px solid #fff;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
 	}
 }  
+.more-adventures a {
+	background-color: #248a83;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Novecento';
+	padding: 0.75rem 1.5rem;
+}
 
 // About *******************************
 .page-template-about .entry-header h1 {
