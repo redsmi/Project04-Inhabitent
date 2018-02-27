@@ -663,6 +663,8 @@ a:hover, a:active {
       #masthead .masthead-flex .main-navigation fieldset {
         border: none;
         padding: 0 0 0 1rem; }
+        #masthead .masthead-flex .main-navigation fieldset .search-field {
+          text-transform: uppercase; }
 
 #colophon {
   background: url(../../images/dark-wood@2x.png);
@@ -821,7 +823,8 @@ a:hover, a:active {
 .archive.category .site-content,
 .archive.tag .site-content,
 .page-id-34 .site-content,
-.search .site-content {
+.search .site-content,
+.error404 .site-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -835,7 +838,8 @@ a:hover, a:active {
   .archive.category .site-content #primary,
   .archive.tag .site-content #primary,
   .page-id-34 .site-content #primary,
-  .search .site-content #primary {
+  .search .site-content #primary,
+  .error404 .site-content #primary {
     width: 73%;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1;
@@ -847,7 +851,8 @@ a:hover, a:active {
   .archive.category .site-content #secondary,
   .archive.tag .site-content #secondary,
   .page-id-34 .site-content #secondary,
-  .search .site-content #secondary {
+  .search .site-content #secondary,
+  .error404 .site-content #secondary {
     width: 27%;
     padding-left: 5%;
     padding-top: 3rem;
@@ -1096,6 +1101,20 @@ a:hover, a:active {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
+
+.error404 .site-content fieldset {
+  border: none;
+  padding: 0;
+  padding-bottom: 0.75rem;
+  margin: 0; }
+  .error404 .site-content fieldset .search-toggle {
+    display: none; }
+  .error404 .site-content fieldset .search-field {
+    text-transform: none;
+    color: #666;
+    background-color: #f4f4f4;
+    font-family: 'Merriweather';
+    padding: 0.3rem; }
 
 /*--------------------------------------------------------------
 # Media

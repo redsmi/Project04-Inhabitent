@@ -95,6 +95,9 @@
 			fieldset {
 				border: none;
 				padding: 0 0 0 1rem;
+				.search-field {
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
@@ -275,7 +278,8 @@
 .archive.category .site-content,
 .archive.tag .site-content,
 .page-id-34 .site-content,
-.search .site-content {
+.search .site-content,
+.error404 .site-content {
 	@include center-block;
 	width: 1120px;
 	display: flex;
@@ -534,5 +538,23 @@
 		list-style: none;
 		margin-left: 0;
 		padding-left: 0;
+	}
+}
+
+// Error 404
+.error404 .site-content fieldset {
+	border: none;
+	padding: 0;
+	padding-bottom: 0.75rem;
+	margin: 0;
+	.search-toggle {
+		display: none;
+	}
+	.search-field {
+		text-transform: none;
+		color: #666;
+		background-color: #f4f4f4;
+		font-family: 'Merriweather';
+		padding: 0.3rem;
 	}
 }
