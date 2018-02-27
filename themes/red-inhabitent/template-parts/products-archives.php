@@ -8,11 +8,11 @@
       </div>
     <?php endif; ?>
     
-    <h2 class="entry-title">
-    <?php the_title(); ?>
-
-    <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
-    </h2>
+    <div class="item-brief">
+    <p><?php the_title(); ?></p>
+    <span></span>
+    <p class="price"><?php echo CFS()->get( 'price' ); ?></p>
+    </div>
   <!-- </header> -->
   <!-- .entry-header -->
 

@@ -1019,6 +1019,26 @@ a:hover, a:active {
       max-height: 250px;
       max-width: none;
       width: auto; }
+  .shop-grid-items article .item-brief {
+    text-align: center;
+    padding: .75rem 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*https://stackoverflow.com/questions/39438026/fiill-the-space-between-two-text-elements-with-dots*/
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    .shop-grid-items article .item-brief p {
+      margin: 0;
+      padding: 0; }
+    .shop-grid-items article .item-brief span {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 0 0.2rem;
+      border-bottom: 1.75px dotted #333; }
 
 .page-id-34 .entry-header h1,
 .search .page-header h1,

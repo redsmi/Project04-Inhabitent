@@ -450,6 +450,22 @@
 			width: auto;	
 		}
 	}
+	.item-brief {
+		text-align: center;
+		padding: .75rem 1rem;
+		width: 100%;
+		display: flex;	/*https://stackoverflow.com/questions/39438026/fiill-the-space-between-two-text-elements-with-dots*/
+		align-items: baseline;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		span {
+			flex: 1;
+			margin: 0 0.2rem;
+			border-bottom: 1.75px dotted #333;       
+		}
+	}
 }
 
 // Find Us, Search
