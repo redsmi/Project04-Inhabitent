@@ -56,8 +56,8 @@
 // Header Masthead
 #masthead {
 	background-color: hsla(0,0%,100%,.85);
-	border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
+	border-top: 1px solid $color__solid-border;
+    border-bottom: 1px solid $color__solid-border;
 	position: fixed;
 	padding: 0.5rem;
     // transition: top .5s linear;
@@ -124,7 +124,7 @@
 		margin-right: auto;
 		width: 1120px;
 		h3 {
-			color: #d99054;
+			color: $color__orange-brand;
 		    text-transform: uppercase;
 		}
 		.svg-inline--fa { // weird, not <i> class
@@ -179,6 +179,7 @@
 		font-size: 2.5rem;
 		font-weight: 400;
 		margin-bottom: 3.5rem;
+		color: $color__purple-brand;
 	}
 }
 
@@ -187,7 +188,7 @@
 	justify-content: space-between;
 	text-align: center;
 	.product-type {
-		border: 1px solid #e1e1e1;
+		border: 1px solid $color__solid-border;
 		border-top-width: 5px;
 		max-width: 23.5%;
 		padding: 0.75rem;
@@ -203,7 +204,7 @@
 		font-family: 'Novecento';
 	}
 	.product-button {
-		background: #248a83;
+		background: $color__green-brand;
 		color: #fff;
 		cursor: pointer;
 		font-size: 0.9rem;
@@ -221,7 +222,7 @@
 	padding-left: 0;
 	li {
 		width: 32%;
-		border: 1px solid #e1e1e1;
+		border: 1px solid $color__solid-border;
 		a {
 			text-transform: uppercase;
 		}
@@ -236,7 +237,7 @@
 			font-size: 0.75rem;
 		}
 		h3 {
-			color: #248a83;
+			color: $color__green-brand;
 			margin-top: 0.5rem;
 			margin-bottom: 1.5rem;
 		}
@@ -311,7 +312,7 @@
 	}
 }  
 .more-adventures a {
-	background-color: #248a83;
+	background-color: $color__green-brand;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Novecento';
@@ -354,7 +355,7 @@
 	#primary {
 		width: 73%;
 		padding-right: 5%;
-		border-right: 1px solid #e1e1e1;
+		border-right: 1px solid $color__solid-border;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
@@ -399,7 +400,7 @@
 		height: auto;
 	}
 	h1, h2 {
-		background-color: #248a83;
+		background-color: $color__green-brand;
 		color: #fff;
 		position: absolute;
 		top: 0;
@@ -411,7 +412,7 @@
 		line-height: 1.25;
 	}
 	.entry-meta {
-		background-color: #248a83;
+		background-color: $color__green-brand;
 		color: #fff;
 		position: absolute;
 		bottom: 0;
@@ -480,7 +481,7 @@
 .post-type-archive-product .page-header,
 .tax-product-type .page-header {
 	text-align: center;
-    border-bottom: 1px dashed #c8c8c8;
+    border-bottom: 1px dashed $color__dashed-border;
     margin-bottom: 3rem;
 	ul {
 		padding: 0;
@@ -494,7 +495,7 @@
 		  margin: 0 1.5rem;
 			a {
 			font-family: 'Novecento';
-			color: #248a83;
+			color: $color__green-brand;
 			text-decoration: none;
 				&:hover {
 				color: #000;
@@ -513,7 +514,7 @@
 	flex-wrap: wrap;
 }
 .shop-grid-items article {
-	border: 1px solid #e1e1e1;
+	border: 1px solid $color__solid-border;
 	flex: 0 1 23%;
 	max-width: 23%;
 	margin-bottom: 1.5rem;
@@ -565,7 +566,7 @@
 		}
 	}
 	.entry-title {
-		color: #d99054;
+		color: $color__orange-brand;
 		margin: 0;
 		font-size: 2.5rem;
 	}
@@ -594,7 +595,7 @@
 .archive.date .page-header,
 .archive.category .page-header,
 .archive.tag .page-header  {
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $color__solid-border;
     margin-bottom: 3rem;
 }
 

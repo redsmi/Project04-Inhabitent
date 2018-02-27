@@ -737,7 +737,8 @@ a:hover, a:active {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.5rem;
+    color: #2f1339; }
 
 .product-type-wrapper {
   display: -webkit-box;
@@ -760,7 +761,7 @@ a:hover, a:active {
   .product-type-wrapper a {
     font-family: 'Novecento'; }
   .product-type-wrapper .product-button {
-    background: #248a83;
+    background: #248A83;
     color: #fff;
     cursor: pointer;
     font-size: 0.9rem;
@@ -791,7 +792,7 @@ a:hover, a:active {
     .journal-feed ul .info-preview .entry-meta {
       font-size: 0.75rem; }
     .journal-feed ul .info-preview h3 {
-      color: #248a83;
+      color: #248A83;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem; }
     .journal-feed ul .info-preview .read-entry {
@@ -857,7 +858,7 @@ a:hover, a:active {
     text-transform: uppercase; }
 
 .more-adventures a {
-  background-color: #248a83;
+  background-color: #248A83;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Novecento';
@@ -966,7 +967,7 @@ a:hover, a:active {
   .archive.tag .entry-header h2,
   .single-post .entry-header h1,
   .single-post .entry-header h2 {
-    background-color: #248a83;
+    background-color: #248A83;
     color: #fff;
     position: absolute;
     top: 0;
@@ -981,7 +982,7 @@ a:hover, a:active {
   .archive.category .entry-header .entry-meta,
   .archive.tag .entry-header .entry-meta,
   .single-post .entry-header .entry-meta {
-    background-color: #248a83;
+    background-color: #248A83;
     color: #fff;
     position: absolute;
     bottom: 0;
@@ -1056,7 +1057,7 @@ a:hover, a:active {
       .post-type-archive-product .page-header ul li a,
       .tax-product-type .page-header ul li a {
         font-family: 'Novecento';
-        color: #248a83;
+        color: #248A83;
         text-decoration: none; }
         .post-type-archive-product .page-header ul li a:hover,
         .tax-product-type .page-header ul li a:hover {
