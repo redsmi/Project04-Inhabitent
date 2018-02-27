@@ -300,7 +300,8 @@
 // Journal, Journal Posts
 .blog .site-content,
 .single-post .site-content,
-.single-product .site-content {
+.single-product .site-content,
+.error404 .site-content {
 	padding-top: 50px;
 }
 // Archive, Find Us, Search
@@ -530,6 +531,14 @@
 }
 
 // Sidebar
+#custom_html-2 {
+	.contact-flex {
+		display: flex;
+	}
+	.svg-inline--fa {
+		margin-right: 1rem;
+	}
+}
 .day-of-week {
 	font-weight: 700;
 }
@@ -556,5 +565,19 @@
 		background-color: #f4f4f4;
 		font-family: 'Merriweather';
 		padding: 0.3rem;
+	}
+}
+.error404 {
+	h1 {
+		font-size: 2.4rem;
+	}
+	.widget ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	font-family: 'Merriweather';
+	}
+	.widget p {
+		margin-bottom: 0.5rem;
 	}
 }

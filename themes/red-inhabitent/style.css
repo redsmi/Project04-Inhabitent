@@ -570,7 +570,7 @@ a:hover, a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 3rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -860,7 +860,8 @@ a:hover, a:active {
 
 .blog .site-content,
 .single-post .site-content,
-.single-product .site-content {
+.single-product .site-content,
+.error404 .site-content {
   padding-top: 50px; }
 
 .archive .site-content,
@@ -1094,6 +1095,14 @@ a:hover, a:active {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem; }
 
+#custom_html-2 .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#custom_html-2 .svg-inline--fa {
+  margin-right: 1rem; }
+
 .day-of-week {
   font-weight: 700; }
 
@@ -1115,6 +1124,18 @@ a:hover, a:active {
     background-color: #f4f4f4;
     font-family: 'Merriweather';
     padding: 0.3rem; }
+
+.error404 h1 {
+  font-size: 2.4rem; }
+
+.error404 .widget ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-family: 'Merriweather'; }
+
+.error404 .widget p {
+  margin-bottom: 0.5rem; }
 
 /*--------------------------------------------------------------
 # Media
