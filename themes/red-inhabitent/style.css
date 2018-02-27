@@ -801,6 +801,46 @@ a:hover, a:active {
       padding: .75rem 1.5rem;
       text-transform: uppercase; }
 
+.adventure-feed .adventure-list {
+  display: grid;
+  grid-template-rows: 260px 260px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+  .adventure-feed .adventure-list .adv-canoe {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/canoe-girl.jpg");
+    background-size: cover, cover;
+    background-position: center; }
+  .adventure-feed .adventure-list .adv-beach {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-size: cover, cover;
+    background-position: center; }
+  .adventure-feed .adventure-list .adv-mountain {
+    grid-column: 3;
+    grid-row: 2 / 3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-size: cover, cover;
+    background-position: center; }
+  .adventure-feed .adventure-list .adv-night-sky {
+    grid-column: 4;
+    grid-row: 2 / 3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
+    background-size: cover, cover;
+    background-position: center; }
+  .adventure-feed .adventure-list h2 {
+    text-transform: none;
+    font-family: 'Merriweather';
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.25; }
+
 .page-template-about .entry-header h1 {
   font-size: 3rem;
   text-transform: uppercase; }
