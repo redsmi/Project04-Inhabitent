@@ -53,56 +53,6 @@
 
 
 // START OF MY CSS **********************************************************
-// Header Masthead
-#masthead {
-	background-color: hsla(0,0%,100%,.85);
-	border-top: 1px solid $color__solid-border;
-    border-bottom: 1px solid $color__solid-border;
-	position: fixed;
-	padding: 0.5rem;
-    // transition: top .5s linear;
-    width: 100%;
-	z-index: 999;
-	.masthead-flex {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
-		width: 1120px;
-		.site-branding h1 {
-			background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-			background-size: 50px 33px;
-			width: 50px;
-			height: 33px;
-			margin: 0;
-			text-indent: 100%;
-			overflow: hidden;
-			// white-space: nowrap;
-		}
-		.main-navigation {
-			text-transform: uppercase;
-			display: flex;
-			align-items: center;
-			ul {
-				list-style: none;
-				margin: 0;
-				li {
-					display: inline;
-					padding-left: 1rem;
-				}
-			}
-			fieldset {
-				border: none;
-				padding: 0 0 0 1rem;
-				.search-field {
-					text-transform: uppercase;
-				}
-			}
-		}
-	}
-}
-
 // Footer
 #colophon {
 	background: url(../../images/dark-wood@2x.png);
@@ -159,7 +109,7 @@
 // Front Page
 .home-banner {
 	text-align: center;
-	background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+	background: $color__background-gradient,
 				url(../../images/home-hero.jpg);
 	background-size: cover,cover;
 	height: 100vh;
@@ -597,26 +547,6 @@
 .archive.tag .page-header  {
     border-bottom: 1px solid $color__solid-border;
     margin-bottom: 3rem;
-}
-
-// Sidebar
-#custom_html-2 {
-	.contact-flex {
-		display: flex;
-	}
-	.svg-inline--fa {
-		margin-right: 1rem;
-	}
-}
-.day-of-week {
-	font-weight: 700;
-}
-#archives-2 {
-	ul {
-		list-style: none;
-		margin-left: 0;
-		padding-left: 0;
-	}
 }
 
 // Error 404

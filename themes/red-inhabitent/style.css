@@ -508,6 +508,55 @@ a:hover, a:active {
   text-align: right;
   width: 50%; }
 
+#masthead {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 999; }
+  #masthead .masthead-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+    #masthead .masthead-flex .site-branding h1 {
+      background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
+      width: 50px;
+      height: 33px;
+      margin: 0;
+      text-indent: 100%;
+      overflow: hidden; }
+    #masthead .masthead-flex .main-navigation {
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #masthead .masthead-flex .main-navigation ul {
+        list-style: none;
+        margin: 0; }
+        #masthead .masthead-flex .main-navigation ul li {
+          display: inline;
+          padding-left: 1rem; }
+      #masthead .masthead-flex .main-navigation fieldset {
+        border: none;
+        padding: 0 0 0 1rem; }
+        #masthead .masthead-flex .main-navigation fieldset .search-field {
+          text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -579,6 +628,22 @@ a:hover, a:active {
 .widget_search .search-submit {
   display: none; }
 
+#custom_html-2 .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#custom_html-2 .svg-inline--fa {
+  margin-right: 1rem; }
+
+.day-of-week {
+  font-weight: 700; }
+
+#archives-2 ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -616,55 +681,6 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block; }
-
-#masthead {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  padding: 0.5rem;
-  width: 100%;
-  z-index: 999; }
-  #masthead .masthead-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px; }
-    #masthead .masthead-flex .site-branding h1 {
-      background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-      background-size: 50px 33px;
-      width: 50px;
-      height: 33px;
-      margin: 0;
-      text-indent: 100%;
-      overflow: hidden; }
-    #masthead .masthead-flex .main-navigation {
-      text-transform: uppercase;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      #masthead .masthead-flex .main-navigation ul {
-        list-style: none;
-        margin: 0; }
-        #masthead .masthead-flex .main-navigation ul li {
-          display: inline;
-          padding-left: 1rem; }
-      #masthead .masthead-flex .main-navigation fieldset {
-        border: none;
-        padding: 0 0 0 1rem; }
-        #masthead .masthead-flex .main-navigation fieldset .search-field {
-          text-transform: uppercase; }
 
 #colophon {
   background: url(../../images/dark-wood@2x.png);
@@ -1157,22 +1173,6 @@ a:hover, a:active {
 .archive.tag .page-header {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem; }
-
-#custom_html-2 .contact-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-#custom_html-2 .svg-inline--fa {
-  margin-right: 1rem; }
-
-.day-of-week {
-  font-weight: 700; }
-
-#archives-2 ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0; }
 
 .error404 .site-content fieldset {
   border: none;

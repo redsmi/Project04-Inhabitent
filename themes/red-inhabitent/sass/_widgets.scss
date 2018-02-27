@@ -15,3 +15,23 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+// Sidebar //
+#custom_html-2 {
+	.contact-flex {
+		display: flex;
+	}
+	.svg-inline--fa {
+		margin-right: 1rem;
+	}
+}
+.day-of-week {
+	font-weight: 700;
+}
+#archives-2 {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
