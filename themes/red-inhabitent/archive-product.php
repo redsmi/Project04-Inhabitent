@@ -39,7 +39,7 @@ get_header(); ?>
 			<?php
 			$args = array( 
 			'post_type' => 'product', 
-			'posts_per_page' => '16',
+			'posts_per_page' => '100',
 			'orderby' => 'title',
 			'order' => 'ASC'
 						);
@@ -55,9 +55,7 @@ get_header(); ?>
 				<?php wp_reset_postdata(); ?>
 
 			<?php else : ?>
-
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 			<?php endif; ?>
 		</div><!-- shop-grid-items -->
     </main><!-- #main -->

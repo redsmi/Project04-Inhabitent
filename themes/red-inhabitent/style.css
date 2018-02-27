@@ -953,13 +953,15 @@ a:hover, a:active {
   .social-media button .svg-inline--fa {
     margin-right: 0.5rem; }
 
-.post-type-archive-product .site-content {
+.post-type-archive-product .site-content,
+.tax-product-type .site-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
 
-.post-type-archive-product #primary {
+.post-type-archive-product #primary,
+.tax-product-type #primary {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 

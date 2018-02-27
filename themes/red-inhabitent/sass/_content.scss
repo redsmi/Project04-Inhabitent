@@ -389,13 +389,15 @@
 	}
 }
 
-// Shop Archive grid
-.post-type-archive-product .site-content {
+// Shop Archive grid ******************************************
+.post-type-archive-product .site-content,
+.tax-product-type .site-content {
 	@include center-block;
 	width: 1120px;
 	// background: skyblue;
 }
-.post-type-archive-product #primary {
+.post-type-archive-product #primary,
+.tax-product-type #primary {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
