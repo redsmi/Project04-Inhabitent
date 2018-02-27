@@ -100,3 +100,4 @@ add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
 // 	}
 //     return $title;
 // });
+
