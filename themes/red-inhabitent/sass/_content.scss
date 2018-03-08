@@ -433,6 +433,11 @@
 	.svg-inline--fa { // weird, not <i> class
 		margin-right: 0.5rem;
 	}
+	&:hover {
+		color: #fff;
+		background: $color__green-brand;
+		border-color: $color__green-brand;
+	}
 }
 
 // Shop Archive grid ******************************************
