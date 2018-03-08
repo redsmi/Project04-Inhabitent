@@ -62,7 +62,7 @@ get_header(); ?>
 						
 						<div class="info-preview">
 							<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+							<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 							</div><!-- .entry-meta -->
 
 							<a href="<?php echo esc_url(get_permalink()); ?>">			
