@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Type
+ * The template for displaying one product type archive
  */
 
 
