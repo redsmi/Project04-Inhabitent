@@ -320,7 +320,7 @@
 .page-id-34 .site-content,
 .search .site-content,
 .error404 .site-content,
-.page-template-default .site-content {
+body:not(.home).page-template-default .site-content {
 	@include center-block;
 	width: 1120px;
 	display: flex;
@@ -349,7 +349,7 @@
 .archive .site-content,
 .page-id-34 .site-content,
 .search .site-content,
-.page-template-default .site-content {
+body:not(.home).page-template-default .site-content {
 	padding-top: 30px;	
 }
 
