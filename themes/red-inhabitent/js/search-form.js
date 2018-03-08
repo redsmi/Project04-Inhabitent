@@ -1,3 +1,5 @@
+(function($) {
+
 $(document).ready(function () {
     $('.main-navigation .search-field').hide();
 
@@ -11,3 +13,5 @@ $(document).ready(function () {
         $(this).hide({duration:300});
     });
 });
+
+})( jQuery );

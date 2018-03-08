@@ -89,7 +89,7 @@ function red_starter_scripts() {
 	// additional sytle sheets here
 
 	// additional scripts here
-	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', '5.0.6');
+	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', '5.0.6', true);
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
