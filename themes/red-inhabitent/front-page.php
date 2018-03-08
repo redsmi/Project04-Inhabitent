@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="home-banner">
-				<img src="<?php echo get_template_directory_uri()?>/images/inhabitent-logo-full.svg"/>
+				<img src="<?php echo get_template_directory_uri()?>/images/inhabitent-logo-full.svg" alt="Inhabitent logo"/>
 			</section><!-- home-banner -->
 			
 			<section class="shop-feed">

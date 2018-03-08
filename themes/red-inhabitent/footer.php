@@ -35,7 +35,7 @@
 					</div>
 				</div><!-- footer blocks container -->
 				<div class="site-info">
-					Copyright &copy 2017 Inhabitent				
+					Copyright &copy; 2017 Inhabitent				
 				</div><!-- .site-info -->
 
 			</footer><!-- #colophon -->

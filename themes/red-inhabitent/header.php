@@ -23,13 +23,13 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="masthead-flex">
 					<div class="site-branding">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"; rel="home">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<h1 class="site-title">Inhabitent</h1>
 							</a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<div class-"nav-container">
+						<div class="nav-container">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</div>
