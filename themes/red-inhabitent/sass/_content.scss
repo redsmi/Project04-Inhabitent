@@ -319,7 +319,8 @@
 .archive.tag .site-content,
 .page-id-34 .site-content,
 .search .site-content,
-.error404 .site-content {
+.error404 .site-content,
+.page-template-default .site-content {
 	@include center-block;
 	width: 1120px;
 	display: flex;
@@ -347,7 +348,8 @@
 // Archive, Find Us, Search
 .archive .site-content,
 .page-id-34 .site-content,
-.search .site-content {
+.search .site-content,
+.page-template-default .site-content {
 	padding-top: 30px;	
 }
 
