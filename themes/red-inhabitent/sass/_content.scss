@@ -362,9 +362,9 @@
 	line-height: 0;
 	a {
 		color: #fff;
-	}
-	a:visited {
-		color: #fff;
+		&:hover {
+			color: lighten($color__lightgrey-brand, 25%);
+		}
 	}
 	img {
 		width: 100%;
@@ -404,6 +404,11 @@
 	padding: .75rem 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
+	&:hover {
+		color: white;
+		background: $color__green-brand;
+		border-color: $color__green-brand;
+	}
 	}
 }
 // Journal posts: space between articles

@@ -968,12 +968,12 @@ a:hover, a:active {
   .archive.tag .entry-header a,
   .single-post .entry-header a {
     color: #fff; }
-  .blog article .entry-header a:visited,
-  .archive.date .entry-header a:visited,
-  .archive.category .entry-header a:visited,
-  .archive.tag .entry-header a:visited,
-  .single-post .entry-header a:visited {
-    color: #fff; }
+    .blog article .entry-header a:hover,
+    .archive.date .entry-header a:hover,
+    .archive.category .entry-header a:hover,
+    .archive.tag .entry-header a:hover,
+    .single-post .entry-header a:hover {
+      color: #e1e1e1; }
   .blog article .entry-header img,
   .archive.date .entry-header img,
   .archive.category .entry-header img,
@@ -1023,6 +1023,12 @@ a:hover, a:active {
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
+  .blog .entry-content a.read-entry:hover,
+  .archive .entry-content a.read-entry:hover,
+  .search .entry-summary a.read-entry:hover {
+    color: white;
+    background: #248A83;
+    border-color: #248A83; }
 
 .blog article,
 .archive.date article,
