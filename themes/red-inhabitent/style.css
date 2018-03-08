@@ -707,18 +707,18 @@ a:hover, a:active {
       text-transform: uppercase; }
     #colophon .footer-blocks .svg-inline--fa {
       margin-right: 0.5rem; }
-    #colophon .footer-blocks .block1, #colophon .footer-blocks .block2 {
+    #colophon .footer-blocks .contact, #colophon .footer-blocks .business-hours {
       width: 25%;
       margin: 3.5rem 0; }
-      #colophon .footer-blocks .block1 .day-of-week, #colophon .footer-blocks .block2 .day-of-week {
+      #colophon .footer-blocks .contact .day-of-week, #colophon .footer-blocks .business-hours .day-of-week {
         font-weight: bold; }
-    #colophon .footer-blocks .block3 {
+    #colophon .footer-blocks .footer-logo {
       width: 50%;
       text-align: right;
       margin: 3.5rem 0; }
-      #colophon .footer-blocks .block3 .text-logo {
+      #colophon .footer-blocks .footer-logo .text-logo {
         margin-top: 1rem; }
-      #colophon .footer-blocks .block3 img {
+      #colophon .footer-blocks .footer-logo img {
         width: 50%; }
   #colophon .site-info {
     text-align: center;
