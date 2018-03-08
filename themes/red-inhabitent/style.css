@@ -299,6 +299,9 @@ a {
   color: #248a83;
   text-decoration: none; }
 
+a:hover {
+  color: #2f1339; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -1092,9 +1095,9 @@ a:hover, a:active {
         font-family: 'Novecento';
         color: #248A83;
         text-decoration: none; }
-        .post-type-archive-product .page-header ul li a:hover,
-        .tax-product-type .page-header ul li a:hover {
-          color: #000; }
+      .post-type-archive-product .page-header ul li a:hover,
+      .tax-product-type .page-header ul li a:hover {
+        color: #2f1339; }
   .post-type-archive-product .page-header .tax-description,
   .tax-product-type .page-header .tax-description {
     margin: 2rem auto 3rem; }

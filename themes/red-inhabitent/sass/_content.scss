@@ -451,7 +451,6 @@
 .single-product .site-content {
 	@include center-block;
 	width: 1120px;
-	// background: skyblue;
 }
 .post-type-archive-product #primary,
 .tax-product-type #primary,
@@ -478,9 +477,9 @@
 			font-family: 'Novecento';
 			color: $color__green-brand;
 			text-decoration: none;
-				&:hover {
-				color: #000;
-				}
+			}
+			a:hover {
+				color: $color__purple-brand;
 			}
 		}
 	}
