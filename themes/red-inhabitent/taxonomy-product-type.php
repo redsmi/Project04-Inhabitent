@@ -21,13 +21,6 @@ get_header(); ?>
 		</header><!-- .page-header -->
 
 		<div class="shop-grid-items">
-			<?php
-			// $args3 = array( 
-			// 'orderby' => 'title',
-			// 'order' => 'ASC'
-			// 			);
-			// $testing = new WP_Query( $args3 ); // instantiate our object
-			?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/products-archives' ); ?>
