@@ -639,6 +639,13 @@ a:hover, a:active {
   margin-left: 0;
   padding-left: 0; }
 
+#archives-2 a {
+  font-family: 'Merriweather'; }
+
+.widget-title {
+  font-size: 1.5rem;
+  line-height: 1.25rem; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1184,7 +1191,7 @@ a:hover, a:active {
 .page-id-34 .entry-content h2 {
   font-size: 1.8rem; }
 
-.search h2 {
+.search .entry-header h2 {
   font-size: 2rem; }
 
 .search .page-header,
