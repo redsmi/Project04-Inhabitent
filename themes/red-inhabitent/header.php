@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="masthead-flex">
 				<div class="site-branding">
-						<a href="http://localhost:3000/project-04/" rel="home">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"; rel="home">
 							<h1 class="site-title">Inhabitent</h1>
 						</a>
 				</div><!-- .site-branding -->
