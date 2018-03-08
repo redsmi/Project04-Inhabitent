@@ -92,12 +92,12 @@ add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
 // add_action('pre_get_posts', 'shop_items_sort');
 
 // Filter the_archive_title remove "PRODUCT-TYPE:"
-// add_filter( 'get_the_archive_title', function ( $title ) {
-//     if( is_post_type_archive('product') ) {
-// 		$title = 'Shop Stuff';
-//     } else if ( is_tax ('product-type')) {
-// 		$title = sprintf('%1$s', single_term_title('', false) ); 
-// 	}
-//     return $title;
-// });
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_post_type_archive('product') ) {
+		$title = 'Shop Stuff';
+    } else if ( is_tax ('product-type')) {
+		$title = sprintf('%1$s', single_term_title('', false) ); 
+	}
+    return $title;
+});
 

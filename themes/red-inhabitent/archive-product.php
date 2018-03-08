@@ -14,7 +14,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<header class="page-header">
-			<h1>Shop Stuff</h1>
+			<h1> <?php the_archive_title(); ?> </h1>
 		<ul class="product-types-list">
 			<?php
 			$terms = get_terms ( array(

@@ -11,17 +11,12 @@ get_header(); ?>
 			
 		<header class="page-header">
 			<h1>
-			<?php
-			// the_archive_title();
-			single_term_title();
-			?>
+				<?php the_archive_title(); ?>
 			</h1>
 			<div class="tax-description">
-			<p>
-			<?php
-			the_archive_description();
-			?>
-			</p>
+				<p>
+					<?php the_archive_description(); ?>
+				</p>
 			</div>
 		</header><!-- .page-header -->
 
