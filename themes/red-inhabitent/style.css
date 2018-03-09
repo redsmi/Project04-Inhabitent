@@ -295,13 +295,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin: 0.5rem 0; }
 
-a {
-  color: #248a83;
-  text-decoration: none; }
-
-a:hover {
-  color: #2f1339; }
-
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -466,13 +459,16 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:focus {
-  outline: thin dotted; }
+a {
+  color: #248A83;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #2f1339; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
 
-a:hover, a:active {
-  outline: 0; }
-
-/* Menus */
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -524,33 +520,32 @@ a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
     width: 1120px; }
-    #masthead .masthead-flex .site-branding h1 {
-      background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-      background-size: 50px 33px;
-      width: 50px;
-      height: 33px;
-      margin: 0;
-      text-indent: 100%;
-      overflow: hidden; }
-    #masthead .masthead-flex .main-navigation {
-      text-transform: uppercase;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      #masthead .masthead-flex .main-navigation ul {
-        list-style: none;
-        margin: 0; }
-        #masthead .masthead-flex .main-navigation ul li {
-          display: inline;
-          padding-left: 1rem; }
-      #masthead .masthead-flex .main-navigation fieldset {
-        border: none;
-        padding: 0 0 0 1rem; }
-        #masthead .masthead-flex .main-navigation fieldset .search-field {
-          text-transform: uppercase; }
+
+.site-branding h1 {
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  width: 50px;
+  height: 33px;
+  margin: 0;
+  text-indent: 100%;
+  overflow: hidden; }
+
+.main-navigation {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .main-navigation ul {
+    list-style: none;
+    margin: 0; }
+    .main-navigation ul li {
+      display: inline;
+      padding-left: 1rem; }
+  .main-navigation fieldset {
+    border: none;
+    padding: 0 0 0 1rem; }
+    .main-navigation fieldset .search-field {
+      text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -683,48 +678,6 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block; }
-
-#colophon {
-  background: url(../../images/dark-wood@2x.png);
-  background-size: 512px 512px; }
-  #colophon a {
-    color: #fff; }
-  #colophon a:hover {
-    text-decoration: underline;
-    color: #fff; }
-  #colophon p {
-    color: #fff;
-    margin-bottom: 1rem; }
-  #colophon .footer-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px; }
-    #colophon .footer-blocks h3 {
-      color: #d99054;
-      text-transform: uppercase; }
-    #colophon .footer-blocks .svg-inline--fa {
-      margin-right: 0.5rem; }
-    #colophon .footer-blocks .contact, #colophon .footer-blocks .business-hours {
-      width: 25%;
-      margin: 3.5rem 0; }
-      #colophon .footer-blocks .contact .day-of-week, #colophon .footer-blocks .business-hours .day-of-week {
-        font-weight: bold; }
-    #colophon .footer-blocks .footer-logo {
-      width: 50%;
-      text-align: right;
-      margin: 3.5rem 0; }
-      #colophon .footer-blocks .footer-logo .text-logo {
-        margin-top: 1rem; }
-      #colophon .footer-blocks .footer-logo img {
-        width: 50%; }
-  #colophon .site-info {
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    padding-bottom: 1rem; }
 
 .home-banner {
   text-align: center;
@@ -1300,6 +1253,45 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
-# Page Templates
+# Footer
 --------------------------------------------------------------*/
-/* Front page */
+#colophon {
+  background: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px; }
+  #colophon a {
+    color: #fff; }
+  #colophon a:hover {
+    text-decoration: underline;
+    color: #fff; }
+  #colophon p {
+    color: #fff;
+    margin-bottom: 1rem; }
+  #colophon .footer-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+    #colophon .footer-blocks h3 {
+      color: #d99054; }
+    #colophon .footer-blocks .svg-inline--fa {
+      margin-right: 0.5rem; }
+    #colophon .footer-blocks .contact, #colophon .footer-blocks .business-hours {
+      width: 25%;
+      margin: 3.5rem 0; }
+      #colophon .footer-blocks .contact .day-of-week, #colophon .footer-blocks .business-hours .day-of-week {
+        font-weight: bold; }
+    #colophon .footer-blocks .footer-logo {
+      width: 50%;
+      text-align: right;
+      margin: 3.5rem 0; }
+      #colophon .footer-blocks .footer-logo .text-logo {
+        margin-top: 1rem; }
+      #colophon .footer-blocks .footer-logo img {
+        width: 50%; }
+  #colophon .site-info {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 1rem; }

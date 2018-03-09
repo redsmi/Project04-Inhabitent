@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+// Footer
+#colophon {
+	background: url(../../images/dark-wood@2x.png);
+	background-size: 512px 512px;
+	a { 
+		color: #fff;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+		margin-bottom: 1rem;
+	}
+	.footer-blocks {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+		h3 {
+			color: $color__orange-brand;
+		}
+		.svg-inline--fa { // not <i> class
+			margin-right: 0.5rem;
+		}
+		.contact, .business-hours {
+			width: 25%;
+			margin: 3.5rem 0;
+			.day-of-week {
+				font-weight: bold;
+			}
+		}
+		.footer-logo {
+			width: 50%;
+			text-align: right;
+			margin: 3.5rem 0;
+			.text-logo {
+				margin-top: 1rem;
+			}
+			img {
+				width: 50%;
+			}
+		}
+	}
+	.site-info {
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		padding-bottom: 1rem;
+	}
+}

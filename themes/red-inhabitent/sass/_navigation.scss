@@ -5,15 +5,15 @@
 /* Links */
 
 a {
-	// color: $color__link;
-
-	&:visited {
-		// color: $color__link-visited;
-	}
+	color: $color__green-brand;
+	text-decoration: none;
+	// &:visited {
+	// 	color: $color__link-visited;
+	// }
 	&:hover,
 	&:focus,
 	&:active {
-		// color: $color__link-hover;
+		color: $color__purple-brand;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -23,8 +23,6 @@ a {
 		outline: 0;
 	}
 }
-
-/* Menus */
 
 /* Small menu. */
 .menu-toggle,
@@ -62,7 +60,7 @@ a {
 	}
 }
 
-// Header Masthead //
+// Header masthead outer //
 #masthead {
 	background-color: hsla(0,0%,100%,.85);
 	border-top: 1px solid $color__solid-border;
@@ -78,34 +76,34 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 		width: 1120px;
-		.site-branding h1 {
-			background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-			background-size: 50px 33px;
-			width: 50px;
-			height: 33px;
-			margin: 0;
-			text-indent: 100%;
-			overflow: hidden;
+	}
+}
+// Header masthead-flex inner //
+.site-branding h1 {
+	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+	background-size: 50px 33px;
+	width: 50px;
+	height: 33px;
+	margin: 0;
+	text-indent: 100%;
+	overflow: hidden;
+}
+.main-navigation {
+	text-transform: uppercase;
+	display: flex;
+	ul {
+		list-style: none;
+		margin: 0;
+		li {
+			display: inline;
+			padding-left: 1rem;
 		}
-		.main-navigation {
+	}
+	fieldset {
+		border: none;
+		padding: 0 0 0 1rem;
+		.search-field {
 			text-transform: uppercase;
-			display: flex;
-			align-items: center;
-			ul {
-				list-style: none;
-				margin: 0;
-				li {
-					display: inline;
-					padding-left: 1rem;
-				}
-			}
-			fieldset {
-				border: none;
-				padding: 0 0 0 1rem;
-				.search-field {
-					text-transform: uppercase;
-				}
-			}
 		}
 	}
 }
