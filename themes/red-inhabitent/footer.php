@@ -28,7 +28,7 @@
 					</div>
 					<div class="footer-logo">
 						<div class="text-logo">
-							<a href="<?php esc_url(the_permalink()); ?>" rel="home">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
 							</a>
 						</div><!-- .text-logo -->

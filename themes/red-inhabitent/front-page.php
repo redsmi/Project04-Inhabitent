@@ -101,7 +101,7 @@ get_header(); ?>
 					</div>
 				</div>
 					<p class="more-adventures">
-						<a href="#" class="adventure-button">More Adventures</a>
+						<a href="<?php echo esc_url( home_url('/adventures') ); ?>" class="adventure-button">More Adventures</a>
 					</p>
 			</section><!-- adventure-feed -->
 			
