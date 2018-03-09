@@ -627,6 +627,9 @@ a {
 #custom_html-2 .svg-inline--fa {
   margin-right: 1rem; }
 
+#custom_html-2 a {
+  font-family: 'Merriweather'; }
+
 .day-of-week {
   font-weight: 700; }
 
