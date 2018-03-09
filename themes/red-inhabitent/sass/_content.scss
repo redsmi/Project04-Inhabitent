@@ -243,14 +243,6 @@ body:not(.home).page-template-default .site-content {
 		  font-size: 1.2rem;
 		  text-transform: uppercase;
 		  margin: 0 1.5rem;
-			a {
-			font-family: 'Novecento';
-			color: $color__green-brand;
-			text-decoration: none;
-			}
-			a:hover {
-				color: $color__purple-brand;
-			}
 		}
 	}
 	.tax-description {
@@ -320,9 +312,12 @@ body:not(.home).page-template-default .site-content {
 		margin: 0;
 		font-size: 2.5rem;
 	}
+	.entry-content {
+		margin-top: 0;
+	}
 	.price {
-		font-family: Novecento Sans Web,sans-serif;
-		font-size: 1.5rem;
+		font-family: 'Novecento', sans-serif;
+		font-size: 1.75rem;
 		margin: 0;
 	}
 }

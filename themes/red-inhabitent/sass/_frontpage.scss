@@ -49,15 +49,10 @@
 	p {
 		margin-bottom: 1.5rem;
 	}
-	a {
-		font-family: 'Novecento';
-	}
 	.product-button {
 		background: $color__green-brand;
 		color: #fff;
-		cursor: pointer;
 		font-size: 0.9rem;
-		text-decoration: none;
 		text-transform: uppercase;
 		padding: .75rem 1.5rem;
 		&:hover {
@@ -163,11 +158,9 @@
 	}
 	a {
 		color: #fff;
-		font-family: 'Novecento';
 		font-size: 1rem;
 		border: 1px solid #fff;
 		padding: .75rem 1.5rem;
-		text-decoration: none;
 		text-transform: uppercase;
 		&:hover {
 			background: $color__green-brand;
@@ -179,7 +172,6 @@
 	background-color: $color__green-brand;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: 'Novecento';
 	padding: 0.75rem 1.5rem;
 	&:hover {
 		background: darken($color__green-brand, 10%);

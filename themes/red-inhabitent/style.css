@@ -461,7 +461,8 @@ textarea {
 /* Links */
 a {
   color: #248A83;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Novecento'; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -888,16 +889,6 @@ body:not(.home).page-template-default .site-content {
       font-size: 1.2rem;
       text-transform: uppercase;
       margin: 0 1.5rem; }
-      .post-type-archive-product .page-header ul li a,
-      .tax-product-type .page-header ul li a,
-      .post-type-archive-adventures .page-header ul li a {
-        font-family: 'Novecento';
-        color: #248A83;
-        text-decoration: none; }
-      .post-type-archive-product .page-header ul li a:hover,
-      .tax-product-type .page-header ul li a:hover,
-      .post-type-archive-adventures .page-header ul li a:hover {
-        color: #2f1339; }
   .post-type-archive-product .page-header .tax-description,
   .tax-product-type .page-header .tax-description,
   .post-type-archive-adventures .page-header .tax-description {
@@ -972,9 +963,11 @@ body:not(.home).page-template-default .site-content {
     color: #d99054;
     margin: 0;
     font-size: 2.5rem; }
+  .single-product article .entry-content {
+    margin-top: 0; }
   .single-product article .price {
-    font-family: Novecento Sans Web,sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Novecento', sans-serif;
+    font-size: 1.75rem;
     margin: 0; }
 
 .page-id-34 .entry-header h1,
@@ -1180,14 +1173,10 @@ object {
     width: 70px; }
   .product-type-wrapper p {
     margin-bottom: 1.5rem; }
-  .product-type-wrapper a {
-    font-family: 'Novecento'; }
   .product-type-wrapper .product-button {
     background: #248A83;
     color: #fff;
-    cursor: pointer;
     font-size: 0.9rem;
-    text-decoration: none;
     text-transform: uppercase;
     padding: .75rem 1.5rem; }
     .product-type-wrapper .product-button:hover {
@@ -1280,11 +1269,9 @@ object {
     padding-left: 2rem; }
   .adventure-feed .adventure-list a {
     color: #fff;
-    font-family: 'Novecento';
     font-size: 1rem;
     border: 1px solid #fff;
     padding: .75rem 1.5rem;
-    text-decoration: none;
     text-transform: uppercase; }
     .adventure-feed .adventure-list a:hover {
       background: #248A83;
@@ -1294,7 +1281,6 @@ object {
   background-color: #248A83;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Novecento';
   padding: 0.75rem 1.5rem; }
   .more-adventures a:hover {
     background: #19625d; }
