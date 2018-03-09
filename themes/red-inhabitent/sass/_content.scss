@@ -448,20 +448,24 @@ body:not(.home).page-template-default .site-content {
 }
 
 // Shop Archive grid ******************************************
+// Adventures Archive grid ************************************
 .post-type-archive-product .site-content,
 .tax-product-type .site-content,
-.single-product .site-content {
+.single-product .site-content,
+.post-type-archive-adventures .site-content {
 	@include center-block;
 	width: 1120px;
 }
 .post-type-archive-product #primary,
 .tax-product-type #primary,
-.single-product #primary {
+.single-product #primary,
+.post-type-archive-adventures .site-content {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
 .post-type-archive-product .page-header,
-.tax-product-type .page-header {
+.tax-product-type .page-header,
+.post-type-archive-adventures .page-header {
 	text-align: center;
     border-bottom: 1px dashed $color__dashed-border;
     margin-bottom: 3rem;

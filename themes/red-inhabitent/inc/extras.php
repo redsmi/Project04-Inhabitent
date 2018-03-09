@@ -101,3 +101,9 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 });
 
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_post_type_archive('adventures') ) {
+		$title = 'Latest Adventures';
+    }
+    return $title;
+});
