@@ -852,7 +852,7 @@ body:not(.home).page-template-default .site-content {
 .post-type-archive-product #primary,
 .tax-product-type #primary,
 .single-product #primary,
-.post-type-archive-adventures .site-content {
+.post-type-archive-adventures #primary {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -862,26 +862,26 @@ body:not(.home).page-template-default .site-content {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
-  .post-type-archive-product .page-header ul,
-  .tax-product-type .page-header ul,
-  .post-type-archive-adventures .page-header ul {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1rem; }
-    .post-type-archive-product .page-header ul li,
-    .tax-product-type .page-header ul li,
-    .post-type-archive-adventures .page-header ul li {
-      list-style-type: none;
-      display: inline-block;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      margin: 0 1.5rem; }
-  .post-type-archive-product .page-header .tax-description,
-  .tax-product-type .page-header .tax-description,
-  .post-type-archive-adventures .page-header .tax-description {
-    margin: 2rem auto 3rem; }
 
-.shop-grid-items {
+.post-type-archive-product .page-header ul,
+.tax-product-type .page-header ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem; }
+  .post-type-archive-product .page-header ul li,
+  .tax-product-type .page-header ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 1.5rem; }
+
+.post-type-archive-product .page-header .tax-description,
+.tax-product-type .page-header .tax-description {
+  margin: 2rem auto 3rem; }
+
+.shop-grid-items,
+.adventures-grid-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,31 +931,6 @@ body:not(.home).page-template-default .site-content {
               flex: 1;
       margin: 0 0.2rem;
       border-bottom: 1.75px dotted #333; }
-
-.single-product article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 5rem; }
-  .single-product article .product-image {
-    width: 48%; }
-  .single-product article .product-content {
-    width: 48%; }
-    .single-product article .product-content p {
-      line-height: 1.75; }
-  .single-product article .entry-title {
-    color: #d99054;
-    margin: 0;
-    font-size: 2.5rem; }
-  .single-product article .entry-content {
-    margin-top: 0; }
-  .single-product article .price {
-    font-family: 'Novecento', sans-serif;
-    font-size: 1.75rem;
-    margin: 0; }
 
 .page-id-34 .entry-header h1,
 .search .page-header h1,
@@ -1230,3 +1205,31 @@ body:not(.home).page-template-default .site-content {
   .page-template-about .entry-content h2 {
     text-align: center;
     font-size: 2rem; }
+
+/*--------------------------------------------------------------
+# Single post pages
+--------------------------------------------------------------*/
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem; }
+  .single-product article .product-image {
+    width: 48%; }
+  .single-product article .product-content {
+    width: 48%; }
+    .single-product article .product-content p {
+      line-height: 1.75; }
+  .single-product article .entry-title {
+    color: #d99054;
+    margin: 0;
+    font-size: 2.5rem; }
+  .single-product article .entry-content {
+    margin-top: 0; }
+  .single-product article .price {
+    font-family: 'Novecento', sans-serif;
+    font-size: 1.75rem;
+    margin: 0; }

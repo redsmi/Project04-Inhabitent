@@ -29,6 +29,7 @@
 	}
 }
 
+// Shop feed
 .product-type-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -61,6 +62,7 @@
 	}
 }
 
+// Journal feed
 .journal-feed ul {
     display: flex;
     justify-content: space-between;
@@ -105,7 +107,7 @@
 		}
 	}
 }
-// Front Page non-stretch goal Adventures CSS Grid
+// non-stretch goal Adventures feed CSS Grid
 .adventure-feed .adventure-list {
 	display: grid;
 	grid-template-rows: 260px 260px;

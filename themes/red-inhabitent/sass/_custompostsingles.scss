@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# Single post pages
+--------------------------------------------------------------*/
+
+// Single Product page
+.single-product article {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5rem;
+	.product-image {
+		width: 48%;
+	}
+	.product-content {
+		width: 48%;
+		p {
+			line-height: 1.75;
+		}
+	}
+	.entry-title {
+		color: $color__orange-brand;
+		margin: 0;
+		font-size: 2.5rem;
+	}
+	.entry-content {
+		margin-top: 0;
+	}
+	.price {
+		font-family: 'Novecento', sans-serif;
+		font-size: 1.75rem;
+		margin: 0;
+	}
+}
+
+// Single Adventure page
