@@ -188,8 +188,7 @@ body:not(.home).page-template-default .site-content {
 		border-color: $color__green-brand;
 	}
 }
-// Shop Archive grid
-// Adventures Archive grid
+// Shop Archive, Adventures Archive
 .post-type-archive-product .site-content,
 .tax-product-type .site-content,
 .single-product .site-content,
@@ -270,6 +269,42 @@ body:not(.home).page-template-default .site-content {
 			flex: 1;
 			margin: 0 0.2rem;
 			border-bottom: 1.75px dotted #333;       
+		}
+	}
+}
+
+.adventures-grid-items article {
+	flex: 0 1 49%;
+    max-width: 49%;
+	position: relative;
+	.thumbnail {
+		height: 550px;
+		overflow: hidden;
+		img {
+			height: 550px; 
+			max-width: none;
+		}
+	}
+	.entry-title {
+		position: absolute;
+		top: 0;
+		padding: 3rem 1rem 0;
+		a {
+		font-family: 'Merriweather';
+		color: #fff;
+		text-transform: none;
+		font-size: 3rem;
+		font-weight: 400;
+		line-height: 1.25;
+		}
+	}
+	.entry-content {
+		position: absolute;
+		top: 250px;
+		padding: 1rem 1rem;
+		a.read-entry {
+			color: #fff;
+			border-color: #fff;
 		}
 	}
 }

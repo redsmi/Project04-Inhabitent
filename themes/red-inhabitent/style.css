@@ -932,6 +932,37 @@ body:not(.home).page-template-default .site-content {
       margin: 0 0.2rem;
       border-bottom: 1.75px dotted #333; }
 
+.adventures-grid-items article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+  max-width: 49%;
+  position: relative; }
+  .adventures-grid-items article .thumbnail {
+    height: 550px;
+    overflow: hidden; }
+    .adventures-grid-items article .thumbnail img {
+      height: 550px;
+      max-width: none; }
+  .adventures-grid-items article .entry-title {
+    position: absolute;
+    top: 0;
+    padding: 3rem 1rem 0; }
+    .adventures-grid-items article .entry-title a {
+      font-family: 'Merriweather';
+      color: #fff;
+      text-transform: none;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.25; }
+  .adventures-grid-items article .entry-content {
+    position: absolute;
+    top: 250px;
+    padding: 1rem 1rem; }
+    .adventures-grid-items article .entry-content a.read-entry {
+      color: #fff;
+      border-color: #fff; }
+
 .page-id-34 .entry-header h1,
 .search .page-header h1,
 .archive .page-header h1 {
