@@ -947,7 +947,7 @@ body:not(.home).page-template-default .site-content {
   .adventures-grid-items article .entry-title {
     position: absolute;
     top: 0;
-    padding: 3rem 1rem 0;
+    margin: 3rem 1rem 0;
     background-color: rgba(0, 0, 0, 0.4); }
     .adventures-grid-items article .entry-title a {
       font-family: 'Merriweather';
@@ -956,6 +956,8 @@ body:not(.home).page-template-default .site-content {
       font-size: 3rem;
       font-weight: 400;
       line-height: 1.25; }
+      .adventures-grid-items article .entry-title a:hover {
+        color: #e1e1e1; }
   .adventures-grid-items article .entry-content {
     position: absolute;
     top: 250px;
