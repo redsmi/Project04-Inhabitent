@@ -32,3 +32,19 @@
 }
 
 // Single Adventure page
+.single-adventures .entry-content {
+	@include center-block;
+	max-width: 800px;
+	.entry-title {
+		font-size: 2.5rem;
+		margin-top: 2rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 400;
+		margin: 0;
+	}
+	.social-media {
+		margin-bottom: 4rem;
+	}
+}

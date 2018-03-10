@@ -9,8 +9,7 @@
 }
 
 .about-body {
-	margin-left: auto;
-	margin-right: auto;
+	@include center-block;
 	width: 1120px;
 }
 
