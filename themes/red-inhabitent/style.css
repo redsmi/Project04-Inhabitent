@@ -1190,28 +1190,12 @@ body:not(.home).page-template-default .site-content {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/adventure-photos/night-sky.jpg");
     background-size: cover, cover;
     background-position: center; }
-  .adventure-feed .adventure-list h2 {
+  .adventure-feed .adventure-list h3 {
     text-transform: none;
     font-family: 'Merriweather';
-    color: #fff;
     line-height: 1.25;
     padding-left: 2rem;
     text-align: left; }
-  .adventure-feed .adventure-list .h2-large {
-    font-size: 2rem; }
-  .adventure-feed .adventure-list .h2-small {
-    font-size: 1.5rem; }
-  .adventure-feed .adventure-list p {
-    padding-left: 2rem; }
-  .adventure-feed .adventure-list a {
-    color: #fff;
-    font-size: 1rem;
-    border: 1px solid #fff;
-    padding: .75rem 1.5rem;
-    text-transform: uppercase; }
-    .adventure-feed .adventure-list a:hover {
-      background: #248A83;
-      border-color: #248A83; }
 
 .more-adventures a {
   background-color: #248A83;

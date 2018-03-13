@@ -141,33 +141,12 @@
 		background-size: cover, cover;
 		background-position: center;
 	}
-	h2 {
+	h3 {
 		text-transform: none;
 		font-family: 'Merriweather';
-		color: #fff;
 		line-height: 1.25;
 		padding-left: 2rem;
 		text-align: left;
-	}
-	.h2-large {
-		font-size: 2rem;
-	}
-	.h2-small {
-		font-size: 1.5rem;
-	}
-	p {
-		padding-left: 2rem;
-	}
-	a {
-		color: #fff;
-		font-size: 1rem;
-		border: 1px solid #fff;
-		padding: .75rem 1.5rem;
-		text-transform: uppercase;
-		&:hover {
-			background: $color__green-brand;
-			border-color: $color__green-brand;
-		}
 	}
 }  
 .more-adventures a {

@@ -83,26 +83,26 @@ get_header(); ?>
 			<section class="adventure-feed">
 				<h2>Latest Adventures</h2>
 				<div class="adventure-list">
-					<div class="adv-canoe">
-						<h2 class="h2-large">Getting Back to Nature in a Canoe</h2>
-						<p><a href="#">Read More</a></p>
-					</div>
-					<div class="adv-beach">
-						<h2 class="h2-large">A Night with Friends at the Beach</h2>
-						<p><a href="#">Read More</a></p>
-					</div>
-					<div class="adv-mountain">
-						<h2 class="h2-small">Taking in the View at Big Mountain</h2>
-						<p><a href="#">Read More</a></p>
-					</div>
-					<div class="adv-night-sky">
-						<h2 class="h2-small">Star-gazing at the Night Sky</h2>
-						<p><a href="#">Read More</a></p>
-					</div>
-				</div>
-					<p class="more-adventures">
-						<a href="<?php echo esc_url( home_url('/adventures') ); ?>" class="adventure-button">More Adventures</a>
-					</p>
+					<?php
+						$args3 = array(
+							'post_type' => 'adventures',
+							'order' => 'ASC',
+							'posts_per_page' => 4
+								);
+						$adventures = get_posts( $args3 );
+					?>
+   					<?php foreach ( $adventures as $post ) : setup_postdata( $post ); ?>
+    					<div class="adventure-grid-item">
+      						<?php the_post_thumbnail( 'large' );  ?>
+      						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
+    					</div><!-- .adventure-grid-item -->
+    				<?php endforeach; wp_reset_postdata(); ?>
+				</div><!-- .adventures-listhome-adventures -->
+
+				<p class="more-adventures">
+					<a href="<?php echo esc_url( home_url('/adventures') ); ?>" class="adventure-button">More Adventures</a>
+				</p>
 			</section><!-- adventure-feed -->
 			
 		</main><!-- #main -->
