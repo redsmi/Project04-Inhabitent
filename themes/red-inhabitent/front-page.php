@@ -96,10 +96,11 @@ get_header(); ?>
 						<?php
 							$image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 							echo '<div class="adventure-grid-item" 
-							style="background: url('. $image_url.');
+							style="
+							background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), 
+							url('. $image_url.') no-repeat center center;
 							overflow: hidden;
-							background-size: cover;
-							background-position: center;
+							background-size: cover, cover;
 							">';
 						?>	
       						<a href="<?php esc_url(the_permalink()); ?>" class="post-title"><?php the_title(); ?></a>
