@@ -102,8 +102,8 @@ get_header(); ?>
 							background-position: center;
 							">';
 						?>	
-      						<h3><a href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h3>
-							<a class="read-entry" href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
+      						<a href="<?php esc_url(the_permalink()); ?>" class="post-title"><?php the_title(); ?></a>
+							<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
     					</div><!-- .adventure-grid-item -->
     				<?php endforeach; wp_reset_postdata(); ?>
 				</div><!-- .adventures-list -->
