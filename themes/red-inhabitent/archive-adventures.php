@@ -19,17 +19,19 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<?php if ( has_post_thumbnail() ) : ?>
-								<div class="thumbnail">
-								<?php the_post_thumbnail( 'large' ); ?>
-								</div>
-							<?php endif; ?>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="thumbnail">
+							<?php the_post_thumbnail( 'large' ); ?>
+							</div>
+						<?php endif; ?>
 
+						<div class="adventure-info-container">
 							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-						<div class="entry-content">
-							<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More →</a>
-						</div><!-- .entry-content -->
+							<div class="entry-content">
+								<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More →</a>
+							</div>
+						</div><!-- .adventure-info-container -->
 					</article><!-- #post-## -->
 					
 				<?php endwhile; ?>
