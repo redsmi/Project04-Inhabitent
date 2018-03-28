@@ -1189,6 +1189,17 @@ body:not(.home).page-template-default .site-content {
     font-weight: 400;
     margin: 3rem 1.5rem 1.5rem;
     line-height: 1.25; }
+    .adventure-feed .adventure-list a.post-title:hover {
+      color: #e1e1e1; }
+  .adventure-feed .adventure-list .read-entry {
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 0 1.5rem;
+    padding: .75rem 1.5rem; }
+    .adventure-feed .adventure-list .read-entry:hover {
+      color: #fff;
+      background-color: #248a83;
+      border: 1px solid #248a83; }
 
 .more-adventures a {
   background-color: #248A83;
