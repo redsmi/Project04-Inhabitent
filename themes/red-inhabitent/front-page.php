@@ -94,11 +94,11 @@ get_header(); ?>
    					<?php foreach ( $adventures as $post ) : setup_postdata( $post ); ?>
     					<div class="adventure-grid-item">
       						<?php the_post_thumbnail( 'large' );  ?>
-      						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<a href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
+      						<h3><a href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h3>
+							<a class="read-entry" href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
     					</div><!-- .adventure-grid-item -->
     				<?php endforeach; wp_reset_postdata(); ?>
-				</div><!-- .adventures-listhome-adventures -->
+				</div><!-- .adventures-list -->
 
 				<p class="more-adventures">
 					<a href="<?php echo esc_url( home_url('/adventures') ); ?>" class="adventure-button">More Adventures</a>
