@@ -92,8 +92,16 @@ get_header(); ?>
 						$adventures = get_posts( $args3 );
 					?>
    					<?php foreach ( $adventures as $post ) : setup_postdata( $post ); ?>
-    					<div class="adventure-grid-item">
-      						<?php the_post_thumbnail( 'large' );  ?>
+						<!-- Post container with featured image as background -->
+						<?php
+							$image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+							echo '<div class="adventure-grid-item" 
+							style="background: url('. $image_url.');
+							overflow: hidden;
+							background-size: cover;
+							background-position: center;
+							">';
+						?>	
       						<h3><a href="<?php esc_url(the_permalink()); ?>"><?php the_title(); ?></a></h3>
 							<a class="read-entry" href="<?php esc_url(the_permalink()); ?>" class="read-entry">Read More</a>
     					</div><!-- .adventure-grid-item -->
